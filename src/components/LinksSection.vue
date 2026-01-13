@@ -1,18 +1,19 @@
 <script setup>
+import aePretoLogo from '../assets/ae-preto.png';
+
 const links = [
   {
     type: 'internal',
     title: 'Adoção Espiritual',
     subtitle: 'EM DEFESA DA VIDA',
     description: 'Tudo o que você precisa saber sobre a Adoção Espiritual.',
-    icon: 'https://adocaoespiritual.org.br/assets/logo-0061352b.png',
+    icon: aePretoLogo,
     href: 'site_page.html'
   },
   {
     type: 'social',
     title: 'INSTAGRAM',
     handle: 'adocaoespiritualrio',
-    stats: '1.599 posts • 50,9 mil seguidores',
     description: 'Aqui nos comunicamos com você no dia a dia',
     icon: 'fab fa-instagram',
     color: 'text-[#E1306C]',

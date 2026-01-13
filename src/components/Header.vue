@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import LanguageSelector from './LanguageSelector.vue';
+import aePretoLogo from '../assets/ae-preto.png';
 
 const isSticky = ref(false);
 
@@ -30,7 +31,7 @@ onUnmounted(() => {
         <!-- Logo (Left) -->
         <a href="/" class="flex-shrink-0">
           <img 
-            src="https://adocaoespiritual.org.br/assets/logo-0061352b.png" 
+            :src="aePretoLogo" 
             alt="Adoção Espiritual" 
             class="h-12 lg:h-14 w-auto"
           />
@@ -44,7 +45,7 @@ onUnmounted(() => {
             <a href="https://facebook.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-facebook-f"></i></a>
             <a href="https://youtube.com/@adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-youtube"></i></a>
             <a href="https://wa.me/552112345678" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:contato@adocaoespiritual.org.br" class="hover:text-site-terracotta transition-colors text-lg"><i class="fas fa-envelope"></i></a>
+
           </div>
           
           <div class="w-px h-4 bg-black/10"></div> <!-- Subtle Divider -->

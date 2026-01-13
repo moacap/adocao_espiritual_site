@@ -1,3 +1,7 @@
+<script setup>
+import aePretoLogo from '../assets/ae-preto.png';
+</script>
+
 <template>
   <footer class="bg-site-beige pt-24 pb-12 border-t border-black/5">
     <div class="container">
@@ -5,7 +9,7 @@
         <!-- Brand -->
         <div class="lg:col-span-1">
           <img 
-            src="https://adocaoespiritual.org.br/assets/logo-0061352b.png" 
+            :src="aePretoLogo" 
             alt="Adoção Espiritual" 
             class="h-16 w-auto mb-8 grayscale opacity-80"
           />

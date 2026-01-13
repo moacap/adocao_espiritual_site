@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import LanguageSelector from './LanguageSelector.vue';
+import aePretoLogo from '../assets/ae-preto.png';
 
 const isSticky = ref(false);
 
@@ -32,7 +33,7 @@ onUnmounted(() => {
         <!-- Logo (Left) -->
         <a href="/" class="flex-shrink-0">
           <img 
-            src="https://adocaoespiritual.org.br/assets/logo-0061352b.png" 
+            :src="aePretoLogo" 
             alt="Adoção Espiritual" 
             :class="[
               'h-12 lg:h-16 w-auto transition-all duration-500',
