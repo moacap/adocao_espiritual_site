@@ -5,7 +5,7 @@ import { resolve } from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/adoracao_espiritual_site/',
+  base: './',
   build: {
     rollupOptions: {
       input: {
