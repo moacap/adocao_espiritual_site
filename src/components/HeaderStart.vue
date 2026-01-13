@@ -28,8 +28,8 @@ onUnmounted(() => {
           : 'bg-transparent py-8'
       ]"
     >
-      <div class="w-full relative flex items-center justify-center px-5">
-        <!-- Logo -->
+      <div class="w-full flex items-center justify-between px-5 md:px-10">
+        <!-- Logo (Left) -->
         <a href="/" class="flex-shrink-0">
           <img 
             src="https://adocaoespiritual.org.br/assets/logo-0061352b.png" 
@@ -42,7 +42,7 @@ onUnmounted(() => {
         </a>
 
         <!-- Language Selector (Right) -->
-        <div class="absolute right-0 inset-y-0 flex items-center pr-5">
+        <div class="flex items-center">
           <LanguageSelector :isWhite="isSticky" />
         </div>
       </div>
