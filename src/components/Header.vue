@@ -46,7 +46,7 @@ onUnmounted(() => {
         <div class="flex items-center gap-6">
           <!-- Social Icons -->
           <div 
-            class="flex items-center gap-4 transition-colors duration-300"
+            class="hidden md:flex items-center gap-4 transition-colors duration-300"
             :class="isSticky ? 'text-site-dark/60' : 'text-white/80'"
           >
             <a href="https://instagram.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-instagram"></i></a>
@@ -55,7 +55,7 @@ onUnmounted(() => {
             <a href="https://wa.me/552112345678" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-whatsapp"></i></a>
           </div>
           
-          <div class="w-px h-4" :class="isSticky ? 'bg-black/10' : 'bg-white/20'"></div> <!-- Subtle Divider -->
+          <div class="hidden md:block w-px h-4" :class="isSticky ? 'bg-black/10' : 'bg-white/20'"></div> <!-- Subtle Divider -->
 
           <!-- Language Selector -->
           <div class="flex items-center">

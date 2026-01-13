@@ -82,7 +82,7 @@ onUnmounted(() => {
     </div>
 
     <!-- Carousel Content -->
-    <div class="container relative z-10 text-center text-white px-4">
+    <div class="container relative z-10 text-center text-white px-4 pt-24 md:pt-0">
       <Transition name="fade-up" mode="out-in">
         <div :key="currentSlide" class="will-change-transform">
           <span class="text-sm md:text-base font-bold uppercase tracking-[0.4em] mb-6 block drop-shadow-md text-white/90">
