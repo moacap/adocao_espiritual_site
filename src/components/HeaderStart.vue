@@ -4,7 +4,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const isSticky = ref(false);
 
 const handleScroll = () => {
-  isSticky.value = window.scrollY > 100;
+  isSticky.value = window.scrollY > 50;
 };
 
 onMounted(() => {
@@ -18,13 +18,13 @@ onUnmounted(() => {
 
 <template>
   <header class="w-full">
-
-
-    <!-- Main Navigation (Simplified) -->
+    <!-- Main Navigation (Soul Space Style) -->
     <nav 
       :class="[
-        'w-full transition-all duration-300 z-50',
-        isSticky ? 'fixed top-0 left-0 bg-white/60 backdrop-blur-md shadow-lg py-3' : 'relative bg-white/50 backdrop-blur-md py-5'
+        'w-full transition-all duration-700 z-50 fixed top-0 left-0',
+        isSticky 
+          ? 'bg-white/80 backdrop-blur-lg shadow-lg py-3' 
+          : 'bg-transparent py-8'
       ]"
     >
       <div class="container flex items-center justify-center">
@@ -33,11 +33,12 @@ onUnmounted(() => {
           <img 
             src="https://adocaoespiritual.org.br/assets/logo-0061352b.png" 
             alt="Adoção Espiritual" 
-            class="h-12 lg:h-14 w-auto"
+            :class="[
+              'h-12 lg:h-16 w-auto transition-all duration-500',
+              !isSticky ? 'brightness-0 invert' : ''
+            ]"
           />
         </a>
-
-        <!-- Menu Removed as requested -->
       </div>
     </nav>
   </header>
