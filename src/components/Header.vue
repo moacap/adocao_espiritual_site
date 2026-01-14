@@ -31,7 +31,7 @@ onUnmounted(() => {
     >
       <div class="w-full flex items-center justify-between ps-5 pe-2 md:ps-10 md:pe-5">
         <!-- Logo (Left) -->
-        <a href="/" class="flex-shrink-0">
+        <a href="index.html" class="flex-shrink-0">
           <img 
             :src="aePretoLogo" 
             alt="Adoção Espiritual" 
