@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
 
 const props = defineProps({
   isWhite: {
@@ -14,11 +17,13 @@ const languages = [
   { code: 'EN', name: 'English', flag: 'https://flagcdn.com/w40/us.png' }
 ];
 
-const currentLang = ref(languages[0]);
+const currentLang = ref(languages.find(l => l.code === locale.value) || languages[0]);
 const isOpen = ref(false);
 
 const selectLanguage = (lang) => {
   currentLang.value = lang;
+  locale.value = lang.code;
+  localStorage.setItem('user-locale', lang.code);
   isOpen.value = false;
 };
 

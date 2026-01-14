@@ -1,12 +1,16 @@
 <script setup>
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import aePretoLogo from '../assets/ae-preto.png';
 
-const links = [
+const { t } = useI18n();
+
+const links = computed(() => [
   {
     type: 'internal',
-    title: 'Adoção Espiritual',
-    subtitle: 'EM DEFESA DA VIDA',
-    description: 'Tudo o que você precisa saber sobre a Adoção Espiritual.',
+    title: t('links.item1.title'),
+    subtitle: t('links.item1.subtitle'),
+    description: t('links.item1.description'),
     icon: aePretoLogo,
     href: 'site_page.html'
   },
@@ -14,7 +18,7 @@ const links = [
     type: 'social',
     title: 'INSTAGRAM',
     handle: 'adocaoespiritualrio',
-    description: 'Aqui nos comunicamos com você no dia a dia',
+    description: t('links.item2.description'),
     icon: 'fab fa-instagram',
     color: 'text-[#E1306C]',
     href: 'https://instagram.com/adocaoespiritualrio'
@@ -23,7 +27,7 @@ const links = [
     type: 'social',
     title: 'facebook',
     handle: '@adocaoespiritualrio/',
-    description: 'Também estamos presentes por aqui, partilhando conteúdos diariamente',
+    description: t('links.item3.description'),
     icon: 'fab fa-facebook',
     color: 'text-[#1877F2]',
     href: 'https://facebook.com/adocaoespiritualrio'
@@ -32,7 +36,7 @@ const links = [
     type: 'social',
     title: 'YouTube',
     handle: 'adocaoespiritualrio',
-    description: 'Acesse nosso canal e acompanhe conteúdos formativos e inspiradores',
+    description: t('links.item4.description'),
     icon: 'fab fa-youtube',
     color: 'text-[#FF0000]',
     href: 'https://youtube.com/@adocaoespiritualrio'
@@ -40,7 +44,7 @@ const links = [
   {
     type: 'contact',
     title: 'WhatsApp',
-    description: 'Ficou com alguma dúvida? Entre em contato conosco!',
+    description: t('links.item5.description'),
     icon: 'fab fa-whatsapp',
     color: 'text-[#25D366]',
     href: 'https://wa.me/552112345678'
@@ -49,12 +53,12 @@ const links = [
     type: 'contact',
     title: 'E-MAIL',
     handle: 'contato@adocaoespiritual.org.br',
-    description: 'Se precisar, escreva para nós.',
+    description: t('links.item6.description'),
     icon: 'far fa-envelope',
     color: 'text-site-terracotta',
     href: 'mailto:contato@adocaoespiritual.org.br'
   }
-];
+]);
 </script>
 
 <template>

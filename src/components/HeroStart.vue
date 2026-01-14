@@ -1,30 +1,33 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import maosBebe from '../assets/maos_bebe.png';
+
+const { t } = useI18n();
 
 const currentSlide = ref(0);
 let slideInterval = null;
 
-const slides = [
+const slides = computed(() => [
   {
-    tag: 'Seja um Anjo da Guarda',
-    title: 'Adote espiritualmente uma criança.',
-    text: 'Proteja uma vida em perigo de ser interrompida pelo aborto através da oração diária durante nove meses.',
+    tag: t('hero.slide1.tag'),
+    title: t('hero.slide1.title'),
+    text: t('hero.slide1.text'),
     image: 'https://cms.adocaoespiritualrio.org.br/uploads/banner_principal_0a4797804c.webp',
   },
   {
-    tag: 'Movimento em Defesa da Vida',
-    title: 'Oração que salva vidas.',
-    text: 'Milhares de crianças já foram salvas por intermédio de pessoas que se comprometeram com a oração diária.',
+    tag: t('hero.slide2.tag'),
+    title: t('hero.slide2.title'),
+    text: t('hero.slide2.text'),
     image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=2000&auto=format&fit=crop',
   },
   {
-    tag: 'Fé e Compromisso',
-    title: 'Um ato de amor ao próximo.',
-    text: 'Adoção espiritual não requer recursos financeiros, apenas o seu tempo e o seu coração voltados para Deus.',
+    tag: t('hero.slide3.tag'),
+    title: t('hero.slide3.title'),
+    text: t('hero.slide3.text'),
     image: maosBebe,
   }
-];
+]);
 
 const nextSlide = () => {
   currentSlide.value = (currentSlide.value + 1) % slides.length;

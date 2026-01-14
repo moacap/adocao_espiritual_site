@@ -7,21 +7,21 @@
         <div class="lg:w-1/2 order-2 lg:order-1">
           <div class="mb-6 inline-block">
              <span class="text-site-terracotta text-sm font-bold uppercase tracking-widest pb-1">
-               Como Funciona
+               {{ $t('about.badge') }}
              </span>
           </div>
           <h2 class="text-site-dark text-4xl md:text-5xl leading-tight mb-8">
-            A Adoção Espiritual é um <br>
-            amoroso acolhimento através da
-            <span class="font-script text-site-terracotta text-7xl lowercase block mt-2">oração.</span>
+            {{ $t('about.title1') }} <br>
+            {{ $t('about.title2') }}
+            <span class="font-script text-site-terracotta text-7xl lowercase block mt-2">{{ $t('about.title3') }}</span>
           </h2>
           
           <div class="space-y-6 text-site-dark/80 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
             <p>
-              Consiste na proteção de uma criança concebida, cujo nome só Deus conhece, através da oração diária durante nove meses.
+              {{ $t('about.para1') }}
             </p>
             <p>
-              Apoiamos o direito à vida desde a concepção até a morte natural, seguindo os ensinamentos de fé e reparação pedidos por Nossa Senhora de Fátima.
+              {{ $t('about.para2') }}
             </p>
           </div>
 
@@ -29,7 +29,7 @@
             href="#" 
             class="inline-block bg-site-terracotta text-white px-10 py-4 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-site-dark transition-all duration-300 mt-10 shadow-lg"
           >
-            Faça sua adoção
+            {{ $t('about.button') }}
           </a>
         </div>
 

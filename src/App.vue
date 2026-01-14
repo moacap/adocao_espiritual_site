@@ -21,12 +21,12 @@ import Footer from './components/Footer.vue'
           <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
             <div class="max-w-xl">
               <span class="text-site-terracotta text-sm font-bold uppercase tracking-[0.3em] mb-4 block">
-                Fique por dentro
+                {{ $t('highlights.badge') }}
               </span>
-              <h2 class="text-site-dark text-4xl md:text-5xl">Destaques & Notícias</h2>
+              <h2 class="text-site-dark text-4xl md:text-5xl">{{ $t('highlights.title') }}</h2>
             </div>
             <a href="#" class="text-site-terracotta font-bold uppercase tracking-widest text-sm flex items-center hover:text-site-dark transition-colors">
-              Ver todos
+              {{ $t('highlights.view_all') }}
               <svg xmlns="http://www.w3.org/2000/svg" class="ms-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -39,16 +39,16 @@ import Footer from './components/Footer.vue'
               <div class="overflow-hidden h-64 relative">
                 <img src="https://cms.adocaoespiritualrio.org.br/uploads/papa_francesco_8e27546ba4.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
                 <div class="absolute top-4 left-4 bg-site-terracotta text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1">
-                  Igreja
+                  {{ $t('highlights.news1.tag') }}
                 </div>
               </div>
               <div class="p-8 flex flex-col flex-1">
-                <h3 class="text-2xl text-site-dark group-hover:text-site-terracotta transition-colors mb-4">Os Papas sobre o Aborto</h3>
+                <h3 class="text-2xl text-site-dark group-hover:text-site-terracotta transition-colors mb-4">{{ $t('highlights.news1.title') }}</h3>
                 <p class="text-site-dark/70 text-lg leading-relaxed mb-6 line-clamp-3">
-                  Confira o que os últimos Papas falaram sobre a importância de defender a vida desde a concepção.
+                  {{ $t('highlights.news1.desc') }}
                 </p>
                 <div class="mt-auto flex items-center text-site-terracotta font-bold text-xs uppercase tracking-widest">
-                  Leia mais 
+                  {{ $t('highlights.news1.read_more') }} 
                   <span class="ms-2 transform group-hover:translate-x-1 transition-transform">→</span>
                 </div>
               </div>
@@ -59,16 +59,16 @@ import Footer from './components/Footer.vue'
               <div class="overflow-hidden h-64 relative">
                 <img src="https://cms.adocaoespiritualrio.org.br/uploads/papa_joao_paulo_II_cc80df17b9.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
                 <div class="absolute top-4 left-4 bg-site-terracotta text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1">
-                  Testemunho
+                  {{ $t('highlights.news2.tag') }}
                 </div>
               </div>
               <div class="p-8 flex flex-col flex-1">
-                <h3 class="text-2xl text-site-dark group-hover:text-site-terracotta transition-colors mb-4">Testemunhos de Vida</h3>
+                <h3 class="text-2xl text-site-dark group-hover:text-site-terracotta transition-colors mb-4">{{ $t('highlights.news2.title') }}</h3>
                 <p class="text-site-dark/70 text-lg leading-relaxed mb-6 line-clamp-3">
-                  Relatos emocionantes de quem diz sim à vida mesmo em meio às dificuldades da gestação.
+                  {{ $t('highlights.news2.desc') }}
                 </p>
                 <div class="mt-auto flex items-center text-site-terracotta font-bold text-xs uppercase tracking-widest">
-                  Leia mais 
+                  {{ $t('highlights.news2.read_more') }} 
                   <span class="ms-2 transform group-hover:translate-x-1 transition-transform">→</span>
                 </div>
               </div>
@@ -79,16 +79,16 @@ import Footer from './components/Footer.vue'
               <div class="overflow-hidden h-64 relative">
                 <img src="https://cms.adocaoespiritualrio.org.br/uploads/what_is_spiritual_adoption_e404113954.webp" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
                 <div class="absolute top-4 left-4 bg-site-terracotta text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1">
-                  Missão
+                  {{ $t('highlights.news3.tag') }}
                 </div>
               </div>
               <div class="p-8 flex flex-col flex-1">
-                <h3 class="text-2xl text-site-dark group-hover:text-site-terracotta transition-colors mb-4">Em Defesa da Vida</h3>
+                <h3 class="text-2xl text-site-dark group-hover:text-site-terracotta transition-colors mb-4">{{ $t('highlights.news3.title') }}</h3>
                 <p class="text-site-dark/70 text-lg leading-relaxed mb-6 line-clamp-3">
-                  Conheça as ações práticas que realizamos para proteger os que ainda não têm voz.
+                  {{ $t('highlights.news3.desc') }}
                 </p>
                 <div class="mt-auto flex items-center text-site-terracotta font-bold text-xs uppercase tracking-widest">
-                  Leia mais 
+                  {{ $t('highlights.news3.read_more') }} 
                   <span class="ms-2 transform group-hover:translate-x-1 transition-transform">→</span>
                 </div>
               </div>

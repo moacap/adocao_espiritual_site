@@ -1,32 +1,44 @@
 <script setup>
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-const faqs = ref([
+const { t } = useI18n();
+
+const faqs = computed(() => [
   {
-    question: 'Quem pode participar da Adoção Espiritual?',
-    answer: 'Qualquer pessoa: leigos, religiosos, crianças, jovens e adultos. Basta ter o desejo de salvar uma vida através da oração.',
+    question: t('faq.q1.question'),
+    answer: t('faq.q1.answer'),
     isOpen: false
   },
   {
-    question: 'Posso adotar mais de uma criança por vez?',
-    answer: 'A regra recomenda adotar uma criança de cada vez, para que o compromisso seja vivido com fidelidade durante os 9 meses.',
+    question: t('faq.q2.question'),
+    answer: t('faq.q2.answer'),
     isOpen: false
   },
   {
-    question: 'O que fazer se eu esquecer de rezar um dia?',
-    answer: 'Não é pecado, mas o esquecimento prolongado interrompe a Adoção. Se esquecer um dia, continue normalmente no dia seguinte. Se esquecer por muito tempo, deve-se reiniciar o compromisso.',
+    question: t('faq.q3.question'),
+    answer: t('faq.q3.answer'),
     isOpen: false
   },
   {
-    question: 'Como escolher o nome da criança?',
-    answer: 'Você não precisa escolher um nome, pois Deus já a conhece. Mas se desejar, pode dar um nome simbólico para facilitar sua oração.',
+    question: t('faq.q4.question'),
+    answer: t('faq.q4.answer'),
     isOpen: false
   }
 ]);
 
+// Since we are using computed, we need a local state for isOpen
+const openIndices = ref(new Set());
+
 const toggleFaq = (index) => {
-  faqs.value[index].isOpen = !faqs.value[index].isOpen;
+  if (openIndices.value.has(index)) {
+    openIndices.value.delete(index);
+  } else {
+    openIndices.value.add(index);
+  }
 };
+
+const isFaqOpen = (index) => openIndices.value.has(index);
 </script>
 
 <template>
@@ -34,9 +46,9 @@ const toggleFaq = (index) => {
     <div class="container max-w-4xl mx-auto px-4">
       <div class="text-center mb-16">
         <span class="text-site-terracotta text-sm font-bold uppercase tracking-[0.3em] mb-4 block">
-          Dúvidas Comuns
+          {{ $t('faq.badge') }}
         </span>
-        <h2 class="text-site-dark text-4xl md:text-5xl">Dúvidas Frequentes</h2>
+        <h2 class="text-site-dark text-4xl md:text-5xl">{{ $t('faq.title') }}</h2>
       </div>
       
       <div class="space-y-4">
@@ -48,7 +60,7 @@ const toggleFaq = (index) => {
             <span class="font-bold text-lg text-site-dark group-hover:text-site-terracotta transition-colors">{{ faq.question }}</span>
             <div 
               class="w-8 h-8 rounded-full border border-black/10 flex items-center justify-center transition-all duration-300"
-              :class="{'bg-site-terracotta border-site-terracotta text-white rotate-180': faq.isOpen}"
+              :class="{'bg-site-terracotta border-site-terracotta text-white rotate-180': isFaqOpen(index)}"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-4 h-4">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -57,7 +69,7 @@ const toggleFaq = (index) => {
           </button>
           
           <div 
-            v-if="faq.isOpen" 
+            v-if="isFaqOpen(index)" 
             class="px-8 pb-8 text-site-dark/70 text-lg leading-relaxed pt-6 mx-8 mb-2"
           >
             {{ faq.answer }}

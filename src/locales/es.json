@@ -1,0 +1,146 @@
+{
+  "about": {
+    "badge": "Cómo Funciona",
+    "title1": "La Adopción Espiritual es un",
+    "title2": "amoroso acogimiento a través de la",
+    "title3": "oración.",
+    "para1": "Consiste en la protección de un niño concebido, cuyo nombre solo Dios conoce, a través de la oración diaria durante nueve meses.",
+    "para2": "Apoyamos el derecho a la vida desde la concepción hasta la muerte natural, siguiendo las enseñanzas de fe y reparación pedidas por Nuestra Señora de Fátima.",
+    "button": "Haz tu adopción"
+  },
+  "commitment": {
+    "badge": "Tu Compromiso",
+    "title": "Compromiso Diario",
+    "step1": {
+      "title": "Santo Rosario",
+      "text": "Rezar uno de los misterios del Rosario (una decena) todos los días durante nueve meses."
+    },
+    "step2": {
+      "title": "Oración Especial",
+      "text": "\"Señor Jesús, Te pido por este niño concebido, adoptado espiritualmente por mí, que corre el peligro de ser muerto por el aborto...\"",
+      "link": "Ver oración completa"
+    },
+    "step3": {
+      "title": "Acción Adicional",
+      "text": "Añadir espontáneamente un propósito diario, como un pequeño sacrificio o buena obra."
+    },
+    "button": "Iniciar Adopción ahora"
+  },
+  "faq": {
+    "badge": "Dudas Comunes",
+    "title": "Preguntas Frecuentes",
+    "q1": {
+      "question": "¿Quién puede participar en la Adopción Espiritual?",
+      "answer": "Cualquier persona: laicos, religiosos, niños, jóvenes y adultos. Basta tener el deseo de salvar una vida a través de la oración."
+    },
+    "q2": {
+      "question": "¿Puedo adoptar a más de un niño a la vez?",
+      "answer": "La regla recomienda adoptar a un niño de cada vez, para que el compromiso se viva con fidelidad durante os 9 meses."
+    },
+    "q3": {
+      "question": "¿Qué hacer si me olvido de rezar un día?",
+      "answer": "No es pecado, pero el olvido prolongado interrumpe la Adopción. Si se olvida un día, continúe normalmente al día siguiente. Si se olvida por mucho tiempo, se debe reiniciar el compromiso."
+    },
+    "q4": {
+      "question": "¿Cómo elegir el nombre del niño?",
+      "answer": "No necesitas elegir un nombre, pues Dios ya lo conoce. Pero si lo deseas, puedes darle un nombre simbólico para facilitar tu oración."
+    }
+  },
+  "hero": {
+    "slide1": {
+      "tag": "Sé un Ángel de la Guarda",
+      "title": "Adopta espiritualmente a un niño.",
+      "text": "Protege una vida en peligro de ser interrumpida por el aborto a través de la oración diaria durante nueve meses.",
+      "ctaPrimary": "Haz tu Adopción",
+      "ctaSecondary": "Saber Más"
+    },
+    "slide2": {
+      "tag": "Movimiento en Defensa de la Vida",
+      "title": "Oración que salva vidas.",
+      "text": "Miles de niños ya han sido salvados por intermedio de personas que se comprometieron con la oración diaria.",
+      "ctaPrimary": "Quiero Ayudar",
+      "ctaSecondary": "Nuestra Historia"
+    },
+    "slide3": {
+      "tag": "Fe y Compromiso",
+      "title": "Un acto de amor al prójimo.",
+      "text": "La adopción espiritual no requiere recursos financieros, solo tu tiempo y tu corazón volcados a Dios.",
+      "ctaPrimary": "Empieza Ahora",
+      "ctaSecondary": "Preguntas"
+    },
+    "scroll": "Desliza para ver más"
+  },
+  "footer": {
+    "brand": {
+      "desc": "Un movimiento de oración en defensa de los no nacidos, protegiendo la vida desde la concepción."
+    },
+    "links1": {
+      "title": "Adopción",
+      "item1": "¿Qué es?",
+      "item2": "Cómo funciona",
+      "item3": "Compromiso Diario",
+      "item4": "Oraciones"
+    },
+    "links2": {
+      "title": "Recursos",
+      "item1": "Blog y Noticias",
+      "item2": "Testimonios",
+      "item3": "Materiales para Descargar",
+      "item4": "Galería"
+    },
+    "contact": {
+      "title": "Contacto",
+      "address": "Río de Janeiro, Brasil"
+    },
+    "bottom": {
+      "rights": "© 2026 Adopción Espiritual. Todos los derechos reservados. v4.3",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    }
+  },
+  "highlights": {
+    "badge": "Mantente informado",
+    "title": "Destaques y Noticias",
+    "view_all": "Ver todos",
+    "news1": {
+      "tag": "Iglesia",
+      "title": "Los Papas sobre el Aborto",
+      "desc": "Mira lo que los últimos Papas dijeron sobre la importancia de defender la vida desde la concepción.",
+      "read_more": "Leer más"
+    },
+    "news2": {
+      "tag": "Testimonio",
+      "title": "Testimonios de Vida",
+      "desc": "Relatos emocionantes de quienes dicen sí a la vida incluso en medio de las dificultades de la gestación.",
+      "read_more": "Leer más"
+    },
+    "news3": {
+      "tag": "Misión",
+      "title": "En Defensa de la Vida",
+      "desc": "Conoce las acciones prácticas que realizamos para proteger a los que aún no tienen voz.",
+      "read_more": "Leer más"
+    }
+  },
+  "links": {
+    "item1": {
+      "title": "Adopción Espiritual",
+      "subtitle": "EN DEFENSA DE LA VIDA",
+      "description": "Todo lo que necesitas saber sobre la Adopción Espiritual."
+    },
+    "item2": {
+      "description": "Aquí nos comunicamos contigo día a día"
+    },
+    "item3": {
+      "description": "También estamos presentes por aquí, compartiendo contenidos a diario"
+    },
+    "item4": {
+      "description": "Accede a nuestro canal y sigue contenidos formativos e inspiradores"
+    },
+    "item5": {
+      "description": "¿Tienes alguna duda? ¡Ponte en contacto con nosotros!"
+    },
+    "item6": {
+      "description": "Si lo necesitas, escríbenos."
+    }
+  }
+}

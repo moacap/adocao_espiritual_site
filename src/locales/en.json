@@ -1,0 +1,146 @@
+{
+  "about": {
+    "badge": "How It Works",
+    "title1": "Spiritual Adoption is a",
+    "title2": "loving welcoming through",
+    "title3": "prayer.",
+    "para1": "It consists of the protection of a conceived child, whose name only God knows, through daily prayer for nine months.",
+    "para2": "We support the right to life from conception to natural death, following the teachings of faith and reparation requested by Our Lady of Fatima.",
+    "button": "Make your adoption"
+  },
+  "commitment": {
+    "badge": "Your Commitment",
+    "title": "Daily Commitment",
+    "step1": {
+      "title": "Holy Rosary",
+      "text": "Pray one of the mysteries of the Rosary (one decade) every day for nine months."
+    },
+    "step2": {
+      "title": "Special Prayer",
+      "text": "\"Lord Jesus, I ask You for this conceived child, spiritually adopted by me, who is in danger of being killed by abortion...\"",
+      "link": "See full prayer"
+    },
+    "step3": {
+      "title": "Additional Action",
+      "text": "Spontaneously add a daily purpose, such as a small sacrifice or good deed."
+    },
+    "button": "Start Adoption now"
+  },
+  "faq": {
+    "badge": "Common Questions",
+    "title": "Frequently Asked Questions",
+    "q1": {
+      "question": "Who can participate in Spiritual Adoption?",
+      "answer": "Anyone: laypeople, religious, children, youth, and adults. All it takes is the desire to save a life through prayer."
+    },
+    "q2": {
+      "question": "Can I adopt more than one child at a time?",
+      "answer": "The rule recommends adopting one child at a time, so that the commitment is lived with fidelity during the 9 months."
+    },
+    "q3": {
+      "question": "What should I do if I forget to pray one day?",
+      "answer": "It is not a sin, but prolonged forgetting interrupts the Adoption. If you forget one day, continue normally the next day. If you forget for a long time, the commitment should be restarted."
+    },
+    "q4": {
+      "question": "How to choose the child's name?",
+      "answer": "You don't need to choose a name, as God already knows them. But if you wish, you can give a symbolic name to facilitate your prayer."
+    }
+  },
+  "hero": {
+    "slide1": {
+      "tag": "Be a Guardian Angel",
+      "title": "Spiritually adopt a child.",
+      "text": "Protect a life in danger of being interrupted by abortion through daily prayer for nine months.",
+      "ctaPrimary": "Make your Adoption",
+      "ctaSecondary": "Learn More"
+    },
+    "slide2": {
+      "tag": "Movement in Defense of Life",
+      "title": "Prayer that saves lives.",
+      "text": "Thousands of children have already been saved through people who committed to daily prayer.",
+      "ctaPrimary": "I Want to Help",
+      "ctaSecondary": "Our Story"
+    },
+    "slide3": {
+      "tag": "Faith and Commitment",
+      "title": "An act of love for others.",
+      "text": "Spiritual adoption does not require financial resources, only your time and your heart focused on God.",
+      "ctaPrimary": "Start Now",
+      "ctaSecondary": "Questions"
+    },
+    "scroll": "Scroll to see more"
+  },
+  "footer": {
+    "brand": {
+      "desc": "A prayer movement in defense of the unborn, protecting life from conception."
+    },
+    "links1": {
+      "title": "Adoption",
+      "item1": "What is it?",
+      "item2": "How it works",
+      "item3": "Daily Commitment",
+      "item4": "Prayers"
+    },
+    "links2": {
+      "title": "Resources",
+      "item1": "Blog & News",
+      "item2": "Testimonies",
+      "item3": "Download Materials",
+      "item4": "Gallery"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Rio de Janeiro, Brazil"
+    },
+    "bottom": {
+      "rights": "© 2026 Spiritual Adoption. All rights reserved. v4.3",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  },
+  "highlights": {
+    "badge": "Stay Informed",
+    "title": "Highlights & News",
+    "view_all": "View all",
+    "news1": {
+      "tag": "Church",
+      "title": "The Popes on Abortion",
+      "desc": "Check out what the latest Popes said about the importance of defending life from conception.",
+      "read_more": "Read more"
+    },
+    "news2": {
+      "tag": "Testimony",
+      "title": "Testimonies of Life",
+      "desc": "Moving stories of people who say yes to life even amidst the difficulties of pregnancy.",
+      "read_more": "Read more"
+    },
+    "news3": {
+      "tag": "Mission",
+      "title": "In Defense of Life",
+      "desc": "Learn about the practical actions we take to protect those who do not yet have a voice.",
+      "read_more": "Read more"
+    }
+  },
+  "links": {
+    "item1": {
+      "title": "Spiritual Adoption",
+      "subtitle": "IN DEFENSE OF LIFE",
+      "description": "Everything you need to know about Spiritual Adoption."
+    },
+    "item2": {
+      "description": "Here we communicate with you day to day"
+    },
+    "item3": {
+      "description": "We are also present here, sharing content daily"
+    },
+    "item4": {
+      "description": "Access our channel and follow formative and inspiring content"
+    },
+    "item5": {
+      "description": "Have any questions? Get in touch with us!"
+    },
+    "item6": {
+      "description": "If you need, write to us."
+    }
+  }
+}
