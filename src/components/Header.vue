@@ -29,7 +29,7 @@ onUnmounted(() => {
           : 'bg-transparent py-8'
       ]"
     >
-      <div class="w-full flex items-center justify-between px-5 md:px-10">
+      <div class="w-full flex items-center justify-between ps-5 pe-2 md:ps-10 md:pe-5">
         <!-- Logo (Left) -->
         <a href="/" class="flex-shrink-0">
           <img 
@@ -43,19 +43,19 @@ onUnmounted(() => {
         </a>
 
         <!-- Right Side Group (Social + Language) -->
-        <div class="flex items-center gap-6">
+        <div class="flex items-center gap-3 md:gap-6">
           <!-- Social Icons -->
           <div 
-            class="hidden md:flex items-center gap-4 transition-colors duration-300"
+            class="flex items-center gap-2 md:gap-4 transition-colors duration-300"
             :class="isSticky ? 'text-site-dark/60' : 'text-white/80'"
           >
-            <a href="https://instagram.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-instagram"></i></a>
-            <a href="https://facebook.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://youtube.com/@adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-youtube"></i></a>
-            <a href="https://wa.me/552112345678" target="_blank" class="hover:text-site-terracotta transition-colors text-lg"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-base md:text-lg"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-base md:text-lg"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@adocaoespiritualrio" target="_blank" class="hover:text-site-terracotta transition-colors text-base md:text-lg"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/552112345678" target="_blank" class="hover:text-site-terracotta transition-colors text-base md:text-lg"><i class="fab fa-whatsapp"></i></a>
           </div>
           
-          <div class="hidden md:block w-px h-4" :class="isSticky ? 'bg-black/10' : 'bg-white/20'"></div> <!-- Subtle Divider -->
+          <div class="w-px h-4" :class="isSticky ? 'bg-black/10' : 'bg-white/20'"></div> <!-- Subtle Divider -->
 
           <!-- Language Selector -->
           <div class="flex items-center">
