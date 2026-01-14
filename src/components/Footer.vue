@@ -3,7 +3,7 @@ import aePretoLogo from '../assets/ae-preto.png';
 </script>
 
 <template>
-  <footer class="bg-site-beige pt-24 pb-12 border-t border-black/5">
+  <footer class="bg-site-beige pt-24 pb-12">
     <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
         <!-- Brand -->
@@ -65,7 +65,7 @@ import aePretoLogo from '../assets/ae-preto.png';
       </div>
 
       <!-- Bottom Bar -->
-      <div class="pt-12 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6 text-site-dark/50 text-[15px]">
+      <div class="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-site-dark/50 text-[15px]">
         <p>© 2026 Adoção Espiritual. Todos os direitos reservados. v4.3</p>
         <div class="flex space-x-8">
           <a href="#" class="hover:text-site-terracotta transition-colors">Privacidade</a>

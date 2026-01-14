@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 bg-site-terracotta text-white relative overflow-hidden">
+  <section class="py-40 bg-site-terracotta text-white relative overflow-hidden">
     <!-- Subtle Pattern Overlay -->
     <div class="absolute inset-0 opacity-5 pointer-events-none">
       <svg class="h-full w-full" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -33,7 +33,7 @@
           <p class="text-white/85 leading-relaxed italic text-sm mb-6">
             "Senhor Jesus, peço-Vos por esta criança concebida, adotada espiritualmente por mim, que corre o perigo de ser morta pelo aborto..."
           </p>
-          <a href="#" class="text-xs font-bold uppercase tracking-widest border-b border-white pb-1 hover:text-site-dark hover:border-site-dark transition-colors">Ver oração completa</a>
+          <a href="#" class="text-xs font-bold uppercase tracking-widest pb-1 hover:text-site-dark transition-colors">Ver oração completa</a>
         </div>
 
         <!-- Step 3 -->
@@ -54,6 +54,13 @@
           Iniciar Adoção agora
         </a>
       </div>
+    </div>
+
+    <!-- Single Wavy Divider white -->
+    <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-20">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[30px] md:h-[60px] lg:h-[100px]">
+        <path d="M0,0c0,0,300,120,600,120s600,-120,600,-120V120H0V0z" fill="#FFFFFF"></path>
+      </svg>
     </div>
   </section>
 </template>

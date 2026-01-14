@@ -1,12 +1,12 @@
 <template>
-  <section class="py-24 bg-white relative overflow-hidden">
+  <section class="py-40 bg-white relative overflow-hidden">
     <div class="container relative z-10">
       <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 text-center lg:text-left">
         
         <!-- Left Content -->
         <div class="lg:w-1/2 order-2 lg:order-1">
           <div class="mb-6 inline-block">
-             <span class="text-site-terracotta text-sm font-bold uppercase tracking-widest border-b-2 border-site-terracotta pb-1">
+             <span class="text-site-terracotta text-sm font-bold uppercase tracking-widest pb-1">
                Como Funciona
              </span>
           </div>
@@ -58,6 +58,13 @@
         </div>
 
       </div>
+    </div>
+
+    <!-- Single Wavy Divider footer-terracotta -->
+    <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-10">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[30px] md:h-[60px] lg:h-[100px]">
+        <path d="M0,0c0,0,300,120,600,120s600,-120,600,-120V120H0V0z" fill="#BC6F65"></path>
+      </svg>
     </div>
   </section>
 </template>

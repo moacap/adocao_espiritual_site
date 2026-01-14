@@ -30,7 +30,7 @@ const toggleFaq = (index) => {
 </script>
 
 <template>
-  <section class="py-24 bg-site-beige">
+  <section class="py-40 bg-site-beige relative overflow-hidden">
     <div class="container max-w-4xl mx-auto px-4">
       <div class="text-center mb-16">
         <span class="text-site-terracotta text-sm font-bold uppercase tracking-[0.3em] mb-4 block">
@@ -58,12 +58,19 @@ const toggleFaq = (index) => {
           
           <div 
             v-if="faq.isOpen" 
-            class="px-8 pb-8 text-site-dark/70 text-lg leading-relaxed border-t border-black/5 pt-6 mx-8 mb-2"
+            class="px-8 pb-8 text-site-dark/70 text-lg leading-relaxed pt-6 mx-8 mb-2"
           >
             {{ faq.answer }}
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Single Wavy Divider beige -->
+    <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-10">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[30px] md:h-[60px] lg:h-[100px]">
+        <path d="M0,0c0,0,300,120,600,120s600,-120,600,-120V120H0V0z" fill="#F1EDEA"></path>
+      </svg>
     </div>
   </section>
 </template>

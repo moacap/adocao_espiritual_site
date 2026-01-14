@@ -16,7 +16,7 @@ import Footer from './components/Footer.vue'
       <CommitmentSection />
       
       <!-- Highlights Section -->
-      <section class="py-24 bg-white border-t border-black/5">
+      <section class="py-40 bg-white relative overflow-hidden">
         <div class="container">
           <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
             <div class="max-w-xl">
@@ -25,7 +25,7 @@ import Footer from './components/Footer.vue'
               </span>
               <h2 class="text-site-dark text-4xl md:text-5xl">Destaques & Notícias</h2>
             </div>
-            <a href="#" class="text-site-terracotta font-bold uppercase tracking-widest text-sm flex items-center hover:text-site-dark transition-colors border-b border-site-terracotta pb-1">
+            <a href="#" class="text-site-terracotta font-bold uppercase tracking-widest text-sm flex items-center hover:text-site-dark transition-colors">
               Ver todos
               <svg xmlns="http://www.w3.org/2000/svg" class="ms-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -94,6 +94,13 @@ import Footer from './components/Footer.vue'
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Single Wavy Divider beige -->
+        <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-10">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[30px] md:h-[60px] lg:h-[100px]">
+            <path d="M0,0c0,0,300,120,600,120s600,-120,600,-120V120H0V0z" fill="#F1EDEA"></path>
+          </svg>
         </div>
       </section>
 
