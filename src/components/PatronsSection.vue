@@ -66,9 +66,9 @@ onMounted(() => {
       </div>
 
       <!-- Slider -->
-      <div class="relative max-w-5xl mx-auto reveal reveal-delay-1">
+      <div class="relative max-w-5xl mx-auto reveal reveal-delay-1 px-10 md:px-0">
         <div class="overflow-hidden rounded-sm">
-          <div class="relative" style="height: 500px;">
+          <div class="relative h-[580px] md:h-[500px]">
             <div 
               v-for="(patron, index) in patrons" 
               :key="index"
@@ -76,13 +76,13 @@ onMounted(() => {
               :class="currentSlide === index ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'"
             >
               <a :href="patron.link" class="block h-full group cursor-pointer">
-                <div class="grid md:grid-cols-2 gap-8 h-full bg-site-beige p-8 rounded-sm border border-black/5 hover:shadow-xl transition-all">
-                  <div class="flex items-center justify-center ps-16">
-                    <img :src="patron.image" :alt="patron.name" class="w-full h-auto object-contain max-h-[400px] rounded-sm shadow-2xl" />
+                <div class="grid md:grid-cols-2 gap-4 md:gap-8 h-full bg-site-beige p-6 md:p-8 rounded-sm border border-black/5 hover:shadow-xl transition-all">
+                  <div class="flex items-center justify-center md:ps-16">
+                    <img :src="patron.image" :alt="patron.name" class="w-full h-auto object-contain max-h-[220px] md:max-h-[400px] rounded-sm shadow-2xl" />
                   </div>
-                  <div class="flex flex-col justify-center text-center md:text-left">
-                    <h3 class="text-3xl md:text-4xl font-bold mb-4 text-site-dark">{{ patron.name }}</h3>
-                    <p class="text-site-dark/70 text-lg leading-relaxed mb-6">{{ patron.description }}</p>
+                  <div class="flex flex-col justify-center text-center md:text-left mt-4 md:mt-0">
+                    <h3 class="text-2xl md:text-4xl font-bold mb-3 md:mb-4 text-site-dark">{{ patron.name }}</h3>
+                    <p class="text-site-dark/70 text-sm md:text-lg leading-relaxed mb-6">{{ patron.description }}</p>
                     <div class="flex items-center justify-center md:justify-start">
                       <div class="group relative inline-flex items-center h-12 pr-14 pl-6">
                         <span class="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap">
@@ -107,7 +107,7 @@ onMounted(() => {
         <!-- Navigation Arrows -->
         <button 
           @click="prevSlide"
-          class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 text-white rounded-full flex items-center justify-center transition-all z-10"
+          class="absolute -left-4 md:-translate-x-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-site-terracotta/90 hover:bg-site-terracotta text-white rounded-full flex items-center justify-center transition-all z-10"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -115,7 +115,7 @@ onMounted(() => {
         </button>
         <button 
           @click="nextSlide"
-          class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 text-white rounded-full flex items-center justify-center transition-all z-10"
+          class="absolute -right-4 md:translate-x-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-site-terracotta/90 hover:bg-site-terracotta text-white rounded-full flex items-center justify-center transition-all z-10"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />

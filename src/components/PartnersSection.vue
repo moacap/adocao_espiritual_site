@@ -70,7 +70,7 @@ onMounted(() => {
       </div>
 
       <!-- Carousel -->
-      <div class="relative max-w-6xl mx-auto reveal reveal-delay-1">
+      <div class="relative max-w-6xl mx-auto reveal reveal-delay-1 px-10 md:px-0">
         <div class="overflow-hidden">
           <div 
             class="flex transition-transform duration-500 ease-in-out gap-8"
@@ -90,7 +90,7 @@ onMounted(() => {
                 <img 
                   :src="partner.logo" 
                   :alt="partner.name" 
-                  class="w-full h-full object-cover transition-all"
+                  class="w-full h-full object-contain p-6 transition-all"
                 />
               </a>
             </div>
@@ -101,7 +101,7 @@ onMounted(() => {
         <button 
           @click="prevPartners"
           :disabled="currentIndex === 0"
-          class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 disabled:opacity-30 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-all"
+          class="absolute -left-4 md:-translate-x-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 disabled:opacity-30 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-all z-10"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -110,7 +110,7 @@ onMounted(() => {
         <button 
           @click="nextPartners"
           :disabled="currentIndex + itemsToShow >= partners.length"
-          class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 disabled:opacity-30 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-all"
+          class="absolute -right-4 md:translate-x-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-site-terracotta hover:bg-site-terracotta/80 disabled:opacity-30 disabled:cursor-not-allowed text-white rounded-full flex items-center justify-center transition-all z-10"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
