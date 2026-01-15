@@ -1,3 +1,25 @@
+<script setup>
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  const observerOptions = {
+    threshold: 0.15
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-active');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.reveal').forEach((el) => {
+    observer.observe(el);
+  });
+});
+</script>
+
 <template>
   <section class="py-40 bg-site-terracotta text-white relative overflow-hidden">
     <!-- Subtle Pattern Overlay -->
@@ -8,7 +30,7 @@
     </div>
 
     <div class="container relative z-10 max-w-6xl">
-      <div class="text-center mb-16">
+      <div class="text-center mb-16 reveal">
         <span class="text-white/70 text-sm font-bold uppercase tracking-[0.3em] mb-4 block">
           {{ $t('commitment.badge') }}
         </span>
@@ -18,7 +40,7 @@
 
       <div class="grid md:grid-cols-3 gap-12">
         <!-- Step 1 -->
-        <div class="bg-white/10 backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:bg-white/20 transition-all duration-500">
+        <div class="reveal reveal-delay-1 bg-white/10 backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:bg-white/20 transition-all duration-500">
           <div class="text-4xl font-serif mb-6 opacity-30 italic">01.</div>
           <h3 class="text-xl font-bold uppercase tracking-wider mb-4">{{ $t('commitment.step1.title') }}</h3>
           <p class="text-white/80 leading-relaxed font-medium">
@@ -27,17 +49,17 @@
         </div>
 
         <!-- Step 2 -->
-        <div class="bg-white/10 backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:bg-white/20 transition-all duration-500 md:scale-110 shadow-2xl z-10">
+        <div class="reveal reveal-delay-2 bg-white/10 backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:bg-white/20 transition-all duration-500 md:scale-110 shadow-2xl z-10">
           <div class="text-4xl font-serif mb-6 opacity-30 italic">02.</div>
           <h3 class="text-xl font-bold uppercase tracking-wider mb-4">{{ $t('commitment.step2.title') }}</h3>
           <p class="text-white/85 leading-relaxed italic text-sm mb-6">
             {{ $t('commitment.step2.text') }}
           </p>
-          <a href="#" class="text-xs font-bold uppercase tracking-widest pb-1 hover:text-site-dark transition-colors">{{ $t('commitment.step2.link') }}</a>
+          <a href="#" class="text-xs font-bold uppercase tracking-widest pb-1 border-b border-white/20 hover:text-site-dark transition-colors">{{ $t('commitment.step2.link') }}</a>
         </div>
 
         <!-- Step 3 -->
-        <div class="bg-white/10 backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:bg-white/20 transition-all duration-500">
+        <div class="reveal reveal-delay-3 bg-white/10 backdrop-blur-sm p-10 rounded-sm border border-white/10 hover:bg-white/20 transition-all duration-500">
           <div class="text-4xl font-serif mb-6 opacity-30 italic">03.</div>
           <h3 class="text-xl font-bold uppercase tracking-wider mb-4">{{ $t('commitment.step3.title') }}</h3>
           <p class="text-white/80 leading-relaxed font-medium">
@@ -46,7 +68,7 @@
         </div>
       </div>
 
-      <div class="mt-20 text-center">
+      <div class="mt-20 text-center reveal reveal-delay-3">
         <a 
           href="#" 
           class="inline-block bg-white text-site-terracotta px-12 py-5 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-site-dark hover:text-white transition-all duration-300 shadow-xl"
@@ -64,3 +86,21 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+</style>

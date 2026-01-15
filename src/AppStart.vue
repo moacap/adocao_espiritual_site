@@ -2,6 +2,7 @@
 import HeaderStart from './components/HeaderStart.vue'
 import HeroStart from './components/HeroStart.vue'
 import LinksSection from './components/LinksSection.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import LinksSection from './components/LinksSection.vue'
       <HeroStart />
       <LinksSection />
     </main>
+    <Footer />
   </div>
 </template>
 

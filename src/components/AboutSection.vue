@@ -1,3 +1,25 @@
+<script setup>
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  const observerOptions = {
+    threshold: 0.15
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-active');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.reveal').forEach((el) => {
+    observer.observe(el);
+  });
+});
+</script>
+
 <template>
   <section class="py-40 bg-white relative overflow-hidden">
     <div class="container relative z-10">
@@ -5,18 +27,18 @@
         
         <!-- Left Content -->
         <div class="lg:w-1/2 order-2 lg:order-1">
-          <div class="mb-6 inline-block">
-             <span class="text-site-terracotta text-sm font-bold uppercase tracking-widest pb-1">
+          <div class="mb-6 inline-block reveal">
+             <span class="text-site-terracotta text-sm font-bold uppercase tracking-widest pb-1 border-b border-site-terracotta/20">
                {{ $t('about.badge') }}
              </span>
           </div>
-          <h2 class="text-site-dark text-4xl md:text-5xl leading-tight mb-8">
+          <h2 class="reveal reveal-delay-1 text-site-dark text-4xl md:text-5xl leading-tight mb-8">
             {{ $t('about.title1') }} <br>
             {{ $t('about.title2') }}
             <span class="font-script text-site-terracotta text-7xl lowercase block mt-2">{{ $t('about.title3') }}</span>
           </h2>
           
-          <div class="space-y-6 text-site-dark/80 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+          <div class="reveal reveal-delay-2 space-y-6 text-site-dark/80 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
             <p>
               {{ $t('about.para1') }}
             </p>
@@ -25,30 +47,32 @@
             </p>
           </div>
 
-          <a 
-            href="#" 
-            class="inline-block bg-site-terracotta text-white px-10 py-4 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-site-dark transition-all duration-300 mt-10 shadow-lg"
-          >
-            {{ $t('about.button') }}
-          </a>
+          <div class="reveal reveal-delay-3">
+            <a 
+              href="#" 
+              class="inline-block bg-site-terracotta text-white px-10 py-4 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-site-dark transition-all duration-300 mt-10 shadow-lg"
+            >
+              {{ $t('about.button') }}
+            </a>
+          </div>
         </div>
 
         <!-- Right Image Collage -->
         <div class="lg:w-1/2 order-1 lg:order-2">
           <div class="grid grid-cols-2 gap-6 relative">
             <div class="space-y-6">
-              <div class="rounded-sm overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+              <div class="reveal reveal-delay-1 rounded-sm overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
                 <img src="https://cms.adocaoespiritualrio.org.br/uploads/foto1_ee9008fbf4.webp" alt="Baby 1" class="w-full h-auto object-cover aspect-[4/5]" />
               </div>
-              <div class="rounded-sm overflow-hidden shadow-2xl transform translate-x-12 hover:scale-105 transition-transform duration-500">
+              <div class="reveal reveal-delay-2 rounded-sm overflow-hidden shadow-2xl transform translate-x-12 hover:scale-105 transition-transform duration-500">
                 <img src="https://cms.adocaoespiritualrio.org.br/uploads/foto2_4699f045db.webp" alt="Baby 2" class="w-full h-auto object-cover aspect-square" />
               </div>
             </div>
             <div class="space-y-6 pt-12">
-              <div class="rounded-sm overflow-hidden shadow-2xl transform -translate-x-6 hover:scale-105 transition-transform duration-500">
+              <div class="reveal reveal-delay-2 rounded-sm overflow-hidden shadow-2xl transform -translate-x-6 hover:scale-105 transition-transform duration-500">
                 <img src="https://cms.adocaoespiritualrio.org.br/uploads/foto3_f31817b12c.webp" alt="Baby 3" class="w-full h-auto object-cover aspect-square" />
               </div>
-              <div class="rounded-sm overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-500">
+              <div class="reveal reveal-delay-3 rounded-sm overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-500">
                 <img src="https://cms.adocaoespiritualrio.org.br/uploads/foto4_608a3d20a8.webp" alt="Baby 4" class="w-full h-auto object-cover aspect-[4/5]" />
               </div>
             </div>
@@ -68,3 +92,21 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+</style>
