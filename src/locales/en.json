@@ -29,7 +29,16 @@
   "patrons": {
     "badge": "Our Patrons",
     "title": "Meet Our Patrons",
-    "description": "Get to know the saints and blesseds who inspire our mission in defense of life."
+    "description": "Get to know the saints and blesseds who inspire our mission in defense of life.",
+    "guadalupe": {
+      "name": "Our Lady of Guadalupe",
+      "description": "Patroness of the Americas and protector of the unborn"
+    },
+    "ulma": {
+      "name": "Ulma Family",
+      "description": "Blessed martyrs in defense of life"
+    },
+    "button": "Learn more"
   },
   "stories": {
     "badge": "Testimonies",

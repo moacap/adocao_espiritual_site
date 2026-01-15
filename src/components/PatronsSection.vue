@@ -1,31 +1,34 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
 import padroeiraGuadalupe from '../assets/padroeira_guadalupe.png';
 import familiaUlma from '../assets/familia_ulma.png';
 
+const { t } = useI18n();
+
 const currentSlide = ref(0);
 
-const patrons = [
+const patrons = computed(() => [
   {
-    name: 'Nossa Senhora de Guadalupe',
+    name: t('patrons.guadalupe.name'),
     image: padroeiraGuadalupe,
-    description: 'Padroeira das Américas e protetora dos nascituros',
+    description: t('patrons.guadalupe.description'),
     link: '#'
   },
   {
-    name: 'Família Ulma',
+    name: t('patrons.ulma.name'),
     image: familiaUlma,
-    description: 'Beatos mártires em defesa da vida',
+    description: t('patrons.ulma.description'),
     link: '#'
   }
-];
+]);
 
 const nextSlide = () => {
-  currentSlide.value = (currentSlide.value + 1) % patrons.length;
+  currentSlide.value = (currentSlide.value + 1) % patrons.value.length;
 };
 
 const prevSlide = () => {
-  currentSlide.value = (currentSlide.value - 1 + patrons.length) % patrons.length;
+  currentSlide.value = (currentSlide.value - 1 + patrons.value.length) % patrons.value.length;
 };
 
 const goToSlide = (index) => {

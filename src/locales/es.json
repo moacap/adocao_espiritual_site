@@ -27,9 +27,18 @@
     "button": "Saber más"
   },
   "patrons": {
-    "badge": "Nuestros Padroeiros",
-    "title": "Conoce a Nuestros Padroeiros",
-    "description": "Conoce a los santos y beatos que inspiran nuestra misión en defensa de la vida."
+    "badge": "Nuestros Patrones",
+    "title": "Conozca a Nuestros Patrones",
+    "description": "Conozca a los santos y beatos que inspiran nuestra misión en defensa de la vida.",
+    "guadalupe": {
+      "name": "Nuestra Señora de Guadalupe",
+      "description": "Patrona de las Américas y protectora de los no nacidos"
+    },
+    "ulma": {
+      "name": "Familia Ulma",
+      "description": "Beatos mártires en defensa de la vida"
+    },
+    "button": "Saber más"
   },
   "stories": {
     "badge": "Testimonios",
