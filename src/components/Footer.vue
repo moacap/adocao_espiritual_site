@@ -5,9 +5,9 @@ import aePretoLogo from '../assets/ae-preto.png';
 <template>
   <footer class="bg-site-beige pt-24 pb-12">
     <div class="container">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center md:text-left">
         <!-- Brand -->
-        <div class="lg:col-span-1">
+        <div class="lg:col-span-1 flex flex-col items-center md:items-start">
           <img 
             :src="aePretoLogo" 
             alt="Adoção Espiritual" 
@@ -16,7 +16,7 @@ import aePretoLogo from '../assets/ae-preto.png';
           <p class="text-site-dark/70 text-lg leading-relaxed mb-8">
             {{ $t('footer.brand.desc') }}
           </p>
-          <div class="flex space-x-4">
+          <div class="flex space-x-4 justify-center md:justify-start">
             <a href="#" class="w-10 h-10 border border-black/10 rounded-full flex items-center justify-center text-site-dark hover:bg-site-terracotta hover:text-white hover:border-site-terracotta transition-all">
               <i class="fab fa-facebook-f text-sm"></i>
             </a>
@@ -52,11 +52,11 @@ import aePretoLogo from '../assets/ae-preto.png';
         <div>
           <h4 class="text-xl font-bold uppercase tracking-widest mb-8 text-site-dark">{{ $t('footer.contact.title') }}</h4>
           <div class="space-y-6 text-site-dark/70 text-lg">
-            <div class="flex gap-4">
+            <div class="flex flex-col md:flex-row gap-4 items-center md:items-start text-center md:text-left">
               <svg class="w-6 h-6 text-site-terracotta shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               <p>{{ $t('footer.contact.address') }}</p>
             </div>
-            <div class="flex gap-4">
+            <div class="flex flex-col md:flex-row gap-4 items-center md:items-start text-center md:text-left">
               <svg class="w-6 h-6 text-site-terracotta shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               <p>contato@adocaoespiritual.org.br</p>
             </div>
