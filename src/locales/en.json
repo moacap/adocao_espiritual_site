@@ -139,6 +139,13 @@
     "item5": {
       "description": "Have any questions? Get in touch with us!"
     },
+    "item_app": {
+      "title": "MY SPIRITUAL BABY",
+      "description": "Follow the growth of your spiritually adopted baby.",
+      "download": "Download the app",
+      "android": "Android",
+      "ios": "iOS"
+    },
     "item6": {
       "description": "If you need, write to us."
     }

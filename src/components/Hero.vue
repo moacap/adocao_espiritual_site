@@ -2,6 +2,7 @@
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import { useI18n } from "vue-i18n";
 import maosBebe from "../assets/maos_bebe.png";
+import bebeCrucifixo from "../assets/bebe-crucifixo.png";
 
 const { t } = useI18n();
 
@@ -22,8 +23,7 @@ const slides = computed(() => [
     tag: t('hero.slide2.tag'),
     title: t('hero.slide2.title'),
     text: t('hero.slide2.text'),
-    image:
-      "https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=2000&auto=format&fit=crop",
+    image: bebeCrucifixo,
     ctaPrimary: t('hero.slide2.ctaPrimary'),
     ctaSecondary: t('hero.slide2.ctaSecondary'),
   },

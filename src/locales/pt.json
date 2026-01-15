@@ -139,6 +139,13 @@
     "item5": {
       "description": "Ficou com alguma dúvida? Entre em contato conosco!"
     },
+    "item_app": {
+      "title": "MEU BEBÊ ESPIRITUAL",
+      "description": "Acompanhe o crescimento de seu bebê adotado espiritualmente.",
+      "download": "Baixe o aplicativo",
+      "android": "Android",
+      "ios": "iOS"
+    },
     "item6": {
       "description": "Se precisar, escreva para nós."
     }

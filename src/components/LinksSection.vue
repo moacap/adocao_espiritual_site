@@ -50,6 +50,16 @@ const links = computed(() => [
     href: 'https://wa.me/552112345678'
   },
   {
+    type: 'app',
+    title: t('links.item_app.title'),
+    description: t('links.item_app.description'),
+    icon: 'fas fa-baby',
+    color: 'text-[#FECDD3]',
+    bgColor: 'bg-[#007A7C]',
+    androidHref: 'https://play.google.com/store/apps/details?id=pl.abksolutions.adoptujzycie',
+    iosHref: 'https://apps.apple.com/br/app/adote-a-vida/id1127974449'
+  },
+  {
     type: 'contact',
     title: 'E-MAIL',
     handle: 'contato@adocaoespiritual.org.br',
@@ -66,9 +76,10 @@ const links = computed(() => [
     <div class="container max-w-2xl mx-auto px-6">
       <div class="space-y-0">
         <div v-for="(link, index) in links" :key="index">
-          <a 
-            :href="link.href"
-            target="_blank"
+          <component 
+            :is="link.type === 'app' ? 'div' : 'a'"
+            :href="link.type === 'app' ? undefined : link.href"
+            :target="link.type === 'app' ? undefined : '_blank'"
             class="group block py-8 hover:bg-gray-50/50 transition-all duration-300 rounded-lg px-4 -mx-4"
           >
             <div class="flex items-start gap-6">
@@ -76,6 +87,11 @@ const links = computed(() => [
               <div class="flex-shrink-0 w-16 h-16 flex items-center justify-center">
                 <template v-if="link.type === 'internal'">
                   <img :src="link.icon" alt="Logo" class="w-full h-auto object-contain" />
+                </template>
+                <template v-else-if="link.type === 'app'">
+                  <div :class="[link.bgColor, 'w-14 h-14 rounded-full flex items-center justify-center transition-transform group-hover:scale-110 shadow-sm']">
+                    <i :class="[link.icon, link.color, 'text-2xl']"></i>
+                  </div>
                 </template>
                 <template v-else>
                   <i :class="[link.icon, link.color, 'text-4xl transition-transform group-hover:scale-110']"></i>
@@ -96,23 +112,33 @@ const links = computed(() => [
                   </span>
                 </div>
                 
-                <div v-if="link.stats" class="text-sm text-gray-500 mb-2 font-medium">
-                  {{ link.stats }}
-                </div>
-                
                 <p class="text-gray-600 text-base leading-relaxed">
                   {{ link.description }}
                 </p>
+
+                <!-- App Download Links -->
+                <div v-if="link.type === 'app'" class="mt-3 flex items-center gap-4 text-sm">
+                  <span class="text-gray-500">{{ $t('links.item_app.download') }}</span>
+                  <div class="flex items-center gap-4 font-bold text-site-dark">
+                    <a :href="link.androidHref" target="_blank" class="flex items-center gap-1.5 hover:text-site-terracotta transition-colors">
+                      <i class="fab fa-android text-lg"></i> {{ $t('links.item_app.android') }}
+                    </a>
+                    <span class="text-gray-300 font-normal">ou</span>
+                    <a :href="link.iosHref" target="_blank" class="flex items-center gap-1.5 hover:text-site-terracotta transition-colors">
+                      <i class="fab fa-apple text-lg"></i> {{ $t('links.item_app.ios') }}
+                    </a>
+                  </div>
+                </div>
               </div>
 
               <!-- Arrow -->
-              <div class="flex-shrink-0 self-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <div v-if="link.type !== 'app'" class="flex-shrink-0 self-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </div>
-          </a>
+          </component>
           <!-- Separator -->
           <hr v-if="index !== links.length - 1" class="border-gray-100" />
         </div>
