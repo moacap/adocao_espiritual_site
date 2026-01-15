@@ -80,8 +80,8 @@ const isFaqOpen = (index) => openIndices.value.has(index);
 
     <!-- Single Wavy Divider beige -->
     <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-10">
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[30px] md:h-[60px] lg:h-[100px]">
-        <path d="M0,0c0,0,300,120,600,120s600,-120,600,-120V120H0V0z" fill="#F1EDEA"></path>
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[40px] md:h-[80px] lg:h-[110px]">
+        <path d="M0,110 C200,110 400,0 600,0 C800,0 1000,120 1200,60 V120 H0 Z" fill="#F1EDEA"></path>
       </svg>
     </div>
   </section>
