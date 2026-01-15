@@ -58,7 +58,6 @@ const links = computed(() => [
   {
     type: 'contact',
     title: 'E-MAIL',
-    handle: 'contato@adocaoespiritual.org.br',
     description: t('links.item6.description'),
     icon: 'far fa-envelope',
     color: 'text-site-terracotta',
@@ -68,8 +67,8 @@ const links = computed(() => [
 </script>
 
 <template>
-  <section class="py-16 bg-white">
-    <div class="container max-w-2xl mx-auto px-6">
+  <section class="pt-16 pb-32 bg-white relative overflow-hidden">
+    <div class="container max-w-2xl mx-auto px-6 relative z-10">
       <div class="space-y-0">
         <div v-for="(link, index) in links" :key="index">
           <component 
@@ -139,6 +138,13 @@ const links = computed(() => [
           <hr v-if="index !== links.length - 1" class="border-gray-100" />
         </div>
       </div>
+    </div>
+
+    <!-- Single Wavy Divider beige -->
+    <div class="absolute bottom-[-1px] left-0 w-full overflow-hidden leading-[0] z-10">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[40px] md:h-[80px] lg:h-[110px]">
+        <path d="M0,110 C200,110 400,0 600,0 C800,0 1000,120 1200,60 V120 H0 Z" fill="#F1EDEA"></path>
+      </svg>
     </div>
   </section>
 </template>
