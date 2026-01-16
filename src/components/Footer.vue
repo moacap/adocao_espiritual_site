@@ -35,7 +35,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="donate.html"
                 class="hover:text-site-terracotta transition-colors"
                 >{{ $t("footer.links1.item3") }}</a
               >

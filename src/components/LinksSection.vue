@@ -16,6 +16,15 @@ const links = computed(() => [
     href: "site_page.html",
   },
   {
+    type: "contact",
+    title: "Doe Aqui",
+    subtitle: "COLABORE",
+    description: "Ajude-nos a manter este projeto de amor à vida.",
+    icon: "fas fa-heart",
+    color: "text-site-terracotta",
+    href: "donate.html",
+  },
+  {
     type: "social",
     title: t("links.item2.title"),
     description: t("links.item2.description"),
@@ -75,7 +84,13 @@ const links = computed(() => [
           <component
             :is="link.type === 'app' ? 'div' : 'a'"
             :href="link.type === 'app' ? undefined : link.href"
-            :target="link.type === 'app' ? undefined : '_blank'"
+            :target="
+              link.type === 'app'
+                ? undefined
+                : link.href.includes('://') || link.href.startsWith('mailto:')
+                ? '_blank'
+                : '_self'
+            "
             class="group block py-8 hover:bg-gray-50/50 transition-all duration-300 rounded-lg px-4 -mx-4"
           >
             <div class="flex items-start gap-6">
