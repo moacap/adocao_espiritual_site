@@ -20,7 +20,7 @@ const goBack = () => {
     <main class="pt-32 pb-20 container mx-auto px-4 lg:px-20">
       <div class="max-w-4xl mx-auto">
         <h1
-          class="text-4xl md:text-5xl font-serif text-site-dark mb-12 text-center"
+          class="text-4xl md:text-5xl font-serif text-site-terracotta mb-12 text-center"
         >
           Política de Privacidade
         </h1>
