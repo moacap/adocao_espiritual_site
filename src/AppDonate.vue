@@ -2,7 +2,7 @@
 import { onMounted } from 'vue';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
-import supportHands from "./assets/support_hands_banner_1768606133450.png";
+import supportHands from "./assets/maos_doa.png";
 
 const goBack = () => {
   if (window.history.length > 1) {
