@@ -1,4 +1,5 @@
 <script setup>
+import { onMounted } from 'vue';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
 import supportHands from "./assets/support_hands_banner_1768606133450.png";
@@ -10,6 +11,24 @@ const goBack = () => {
     window.location.href = "index.html";
   }
 };
+
+onMounted(() => {
+  const observerOptions = {
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal-active");
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll(".reveal").forEach((el) => {
+    observer.observe(el);
+  });
+});
 </script>
 
 <template>
@@ -20,13 +39,13 @@ const goBack = () => {
       <div class="max-w-4xl mx-auto">
         <!-- Title -->
         <h1
-          class="text-4xl md:text-5xl font-serif text-site-terracotta mb-12 text-center"
+          class="text-4xl md:text-5xl font-serif text-site-terracotta mb-12 text-center reveal"
         >
           Colabore com nosso projeto
         </h1>
 
         <!-- Image Banner with Overlay Text -->
-        <div class="relative rounded-sm overflow-hidden shadow-2xl mb-12 aspect-[16/9]">
+        <div class="relative rounded-sm overflow-hidden shadow-2xl mb-12 aspect-[16/9] reveal reveal-delay-1">
           <img
             :src="supportHands"
             alt="Colabore com nosso projeto"
@@ -40,7 +59,7 @@ const goBack = () => {
         </div>
 
         <!-- Description -->
-        <div class="prose prose-lg text-site-dark/80 max-w-none text-justify mb-16">
+        <div class="prose prose-lg text-site-dark/80 max-w-none text-justify mb-16 reveal reveal-delay-2">
           <p>
             Você pode ajudar nosso projeto fazendo uma doação via chave PIX ou
             por transferência bancária. Sua contribuição nos auxilia a cobrir os
@@ -51,7 +70,7 @@ const goBack = () => {
         </div>
 
         <!-- Donation Info Boxes -->
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <div class="grid md:grid-cols-2 gap-8 mb-16 reveal reveal-delay-3">
           <!-- PIX Section -->
           <div class="bg-site-beige p-8 rounded-sm border border-black/5 hover:shadow-lg transition-all">
             <h3 class="text-xl font-bold text-site-terracotta uppercase tracking-wider mb-4 border-b border-site-terracotta/20 pb-2">
@@ -92,7 +111,7 @@ const goBack = () => {
         </div>
 
         <!-- Back Button -->
-        <div class="flex justify-center">
+        <div class="flex justify-center reveal reveal-delay-3">
           <button
             @click="goBack"
             class="group relative inline-flex items-center h-12 pl-14 pr-6"
@@ -141,4 +160,20 @@ h1 {
 .prose p {
   line-height: 1.8;
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
 </style>
