@@ -45,11 +45,6 @@ const isFaqOpen = (index) => openIndices.value.has(index);
   <section class="pt-5 pb-10 bg-site-beige relative overflow-hidden">
     <div class="container max-w-4xl mx-auto px-4">
       <div class="text-center mb-16">
-        <span
-          class="text-site-terracotta text-sm font-bold uppercase tracking-[0.3em] mb-4 block"
-        >
-          {{ $t("faq.badge") }}
-        </span>
         <h2 class="text-site-dark text-4xl md:text-5xl mb-6">
           {{ $t("faq.title") }}
         </h2>
