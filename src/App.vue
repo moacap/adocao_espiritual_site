@@ -4,6 +4,7 @@ import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
 import IntroSection from './components/IntroSection.vue'
 import HowToParticipateSection from './components/HowToParticipateSection.vue'
+import WhoIsItForSection from './components/WhoIsItForSection.vue'
 import PatronsSection from './components/PatronsSection.vue'
 import StoriesSection from './components/StoriesSection.vue'
 import PartnersSection from './components/PartnersSection.vue'
@@ -37,6 +38,7 @@ onMounted(() => {
       <Hero />
       <IntroSection />
       <HowToParticipateSection />
+      <WhoIsItForSection />
       <PatronsSection />
       <StoriesSection />
       <PartnersSection />

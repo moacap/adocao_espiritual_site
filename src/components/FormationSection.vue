@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="pt-5 pb-40 bg-site-beige relative overflow-hidden">
+  <section class="pt-5 pb-40 bg-white relative overflow-hidden">
     <div class="container relative z-10">
       <div
         class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 text-center lg:text-left"
@@ -111,7 +111,7 @@ onMounted(() => {
       >
         <path
           d="M0,110 C200,110 400,0 600,0 C800,0 1000,120 1200,60 V120 H0 Z"
-          fill="#FFFFFF"
+          fill="#F1EDEA"
         ></path>
       </svg>
     </div>
