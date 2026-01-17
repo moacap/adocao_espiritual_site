@@ -87,15 +87,16 @@ onMounted(() => {
 
         <!-- Left Image -->
         <div class="lg:w-1/2">
-          <div
-            class="reveal reveal-delay-1 rounded-sm overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500"
+          <a 
+            href="stories.html"
+            class="reveal reveal-delay-1 block rounded-sm overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 cursor-pointer"
           >
             <img
               src="https://cms.adocaoespiritualrio.org.br/uploads/papa_joao_paulo_II_cc80df17b9.jpg"
               alt="Histórias Inspiradoras"
               class="w-full h-auto object-cover aspect-[4/3]"
             />
-          </div>
+          </a>
         </div>
       </div>
     </div>

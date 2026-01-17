@@ -2,7 +2,6 @@
 import { onMounted } from 'vue';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
-
 const goBack = () => {
   if (window.history.length > 1) {
     window.history.back();
@@ -11,9 +10,25 @@ const goBack = () => {
   }
 };
 
+const getStoryLink = (storyId) => {
+  switch (storyId) {
+    case 1: return "story-famosos.html";
+    case 2: return "story-padre-pio.html";
+    case 4: return "story-melissa.html";
+    case 3: return "story-matheus.html";
+    case 5: return "story-tong.html";
+    default: return "#";
+  }
+};
+
 const navigateTo = (storyId) => {
-  if (storyId === 1) {
-    window.location.href = "story-famosos.html";
+  const link = getStoryLink(storyId);
+  if (link && link !== "#") {
+    if (link.startsWith('http')) {
+      window.open(link, '_blank');
+    } else {
+      window.location.href = link;
+    }
   }
 };
 
@@ -29,7 +44,7 @@ const stories = [
   {
     id: 2,
     title: "Padre Pio fez uma mulher ver o Papa que ela abortou",
-    date: "01/11/2023",
+    date: "17/01/2026",
     category: "Histórias de Vida",
     description: "A criança que você matou no seu ventre com o aborto, nos desígnios de Deus, devia se tornar esse papa.",
     image: "https://cms.adocaoespiritualrio.org.br/uploads/padre_pio_29a89a4224.jpg",
@@ -105,11 +120,13 @@ onMounted(() => {
             :class="'reveal-delay-' + (index % 3 + 1)"
           >
             <!-- Image Container -->
-            <div class="relative aspect-[16/10] bg-site-beige rounded-sm overflow-hidden mb-6">
+            <div 
+              class="relative aspect-[16/10] bg-site-beige rounded-sm overflow-hidden mb-6"
+            >
               <img 
                 :src="story.image" 
                 :alt="story.title"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <!-- Video Overlay Icon if applicable -->
               <div v-if="story.isVideo" class="absolute inset-0 flex items-center justify-center bg-black/20">
@@ -128,7 +145,9 @@ onMounted(() => {
             </div>
 
             <!-- Content -->
-            <h2 class="text-2xl text-site-dark mb-4 leading-tight font-serif-site">
+            <h2 
+              class="text-2xl text-site-dark mb-4 leading-tight font-serif-site transition-colors duration-300"
+            >
               {{ story.title }}
             </h2>
             <p class="text-site-dark/70 text-lg leading-relaxed line-clamp-3 mb-6">
@@ -136,21 +155,23 @@ onMounted(() => {
             </p>
 
             <div class="mt-auto flex justify-center">
-              <div 
-                @click="navigateTo(story.id)"
-                class="relative inline-flex items-center h-10 pr-12 pl-0 transition-all cursor-pointer"
+              <a 
+                :href="getStoryLink(story.id)"
+                :target="getStoryLink(story.id).startsWith('http') ? '_blank' : '_self'"
+                class="relative inline-flex items-center h-10 pr-12 pl-0 transition-all cursor-pointer group/btn"
+                @click.stop
               >
-                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap group-hover:px-4 transition-all duration-500">
+                <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap group-hover/btn:px-4 transition-all duration-500">
                   Saiba mais
                 </span>
-                <div class="absolute right-0 top-0 h-full w-10 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0">
+                <div class="absolute right-0 top-0 h-full w-10 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover/btn:w-full bg-white/0">
                   <div class="absolute right-0 top-0 w-10 h-full flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-site-terracotta">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                     </svg>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </article>
         </div>
