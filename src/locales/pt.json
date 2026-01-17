@@ -1,0 +1,206 @@
+{
+  "about": {
+    "badge": "Como Funciona",
+    "title1": "A Adoção Espiritual é um",
+    "title2": "amoroso acolhimento através da",
+    "title3": "oração.",
+    "para1": "Consiste na proteção de uma criança concebida, cujo nome só Deus conhece, através da oração diária durante nove meses.",
+    "para2": "Apoiamos o direito à vida desde a concepção até a morte natural, seguindo os ensinamentos de fé e reparação pedidos por Nossa Senhora de Fátima.",
+    "button": "Faça sua adoção"
+  },
+  "whatIs": {
+    "badge": "Conheça",
+    "title": "O Que é a Adoção Espiritual?",
+    "description": "A Adoção Espiritual é viver a maternidade e a paternidade espiritual em relação às crianças ameaçadas pelo aborto.",
+    "button": "Saiba mais"
+  },
+  "intro": {
+    "title": "O que é a Adoção Espiritual?",
+    "text": "A Adoção Espiritual é o exercício da maternidade e paternidade espiritual com as crianças ameaçadas pelo aborto. Imagine que em algum lugar que somente Deus conhece, surgiu uma criança que não está sendo esperada. Quando os pais descobrirem sua existência, irão se assustar e considerar o aborto como solução. Seja a mãe ou o pai espiritual desta criança. Acolha-a com seu carinho e amor por meio de uma breve oração diária durante 9 meses.",
+    "button": "Saiba mais"
+  },
+  "howToParticipate": {
+    "badge": "Participe",
+    "title": "Como participar?",
+    "description": "A participação na Adoção Espiritual começa com a intenção de cuidar espiritualmente de uma criança que só Deus conhece, ameaçada pelo aborto, de sua mãe e da sua família.",
+    "button": "Saiba mais"
+  },
+  "whoIsItFor": {
+    "title": "Para quem recomendamos a Adoção Espiritual",
+    "description": "Mulheres que passaram pela experiência do aborto, para os idosos, para os jovens, para as crianças e para os casais que não conseguem ter filhos próprios",
+    "button": "Saiba mais"
+  },
+  "patrons": {
+    "badge": "Nossos Padroeiros",
+    "title": "Conheça Nossos Padroeiros",
+    "description": "Conheça os santos e beatos que inspiram nossa missão em defesa da vida.",
+    "button": "Saiba mais",
+    "guadalupe": {
+      "name": "Nossa Senhora de Guadalupe",
+      "description": "Padroeira das Américas e protetora dos nascituros"
+    },
+    "ulma": {
+      "name": "Família Ulma",
+      "description": "Beatos mártires em defesa da vida"
+    }
+  },
+  "stories": {
+    "badge": "Testemunhos",
+    "title": "Histórias Inspiradoras",
+    "description": "Conheça belas histórias em defesa da vida.",
+    "button": "Saiba mais"
+  },
+  "partners": {
+    "badge": "Parceiros",
+    "title": "Nossos Parceiros",
+    "description": "Conheça quem caminha conosco nesta missão."
+  },
+  "formation": {
+    "badge": "Aprenda",
+    "title": "Formação",
+    "description": "Conheça mais sobre o tema em defesa da vida.",
+    "button": "Saiba mais"
+  },
+  "commitment": {
+    "badge": "Seu Compromisso",
+    "title": "Compromisso Diário",
+    "step1": {
+      "title": "Santo Rosário",
+      "text": "Rezar um dos mistérios do Rosário (uma dezena) todos os dias durante nove meses."
+    },
+    "step2": {
+      "title": "Oração Especial",
+      "text": "\"Senhor Jesus, peço-Vos por esta criança concebida, adotada espiritualmente por mim, que corre o perigo de ser morta pelo aborto...\"",
+      "link": "Ver oração completa"
+    },
+    "step3": {
+      "title": "Ação Adicional",
+      "text": "Acrescentar espontaneamente um propósito diário, como um pequeno sacrifício ou boa obra."
+    },
+    "button": "Iniciar Adoção agora"
+  },
+  "faq": {
+    "badge": "Dúvidas Comuns",
+    "title": "Perguntas Frequentes",
+    "description": "Separamos algumas dúvidas comuns, mas caso essas não te ajudem, entre em contato conosco. Estamos prontos para te ajudar!",
+    "button": "Saiba mais",
+    "q1": {
+      "question": "Quem pode participar da Adoção Espiritual?",
+      "answer": "Qualquer pessoa: leigos, religiosos, crianças, jovens e adultos. Basta ter o desejo de salvar uma vida através da oração."
+    },
+    "q2": {
+      "question": "Posso adotar mais de uma criança por vez?",
+      "answer": "A regra recomenda adotar uma criança de cada vez, para que o compromisso seja vivido com fidelidade durante os 9 meses."
+    },
+    "q3": {
+      "question": "O que fazer se eu esquecer de rezar um dia?",
+      "answer": "Não é pecado, mas o esquecimento prolongado interrompe a Adoção. Se esquecer um dia, continue normalmente no dia seguinte. Se esquecer por muito tempo, deve-se reiniciar o compromisso."
+    },
+    "q4": {
+      "question": "Como escolher o nome da criança?",
+      "answer": "Você não precisa escolher um nome, pois Deus já a conhece. Mas se desejar, pode dar um nome simbólico para facilitar sua oração."
+    }
+  },
+  "hero": {
+    "slide1": {
+      "tag": "Seja um Anjo da Guarda",
+      "title": "Adote espiritualmente uma criança.",
+      "text": "Proteja uma vida em perigo de ser interrompida pelo aborto através da oração diária durante nove meses.",
+      "ctaPrimary": "Faça sua Adoção",
+      "ctaSecondary": "Saiba Mais"
+    },
+    "slide2": {
+      "tag": "Movimento em Defesa da Vida",
+      "title": "Oração que salva vidas.",
+      "text": "Milhares de crianças já foram salvas por intermédio de pessoas que se comprometeram com a oração diária.",
+      "ctaPrimary": "Quero Ajudar",
+      "ctaSecondary": "Nossa História"
+    },
+    "slide3": {
+      "tag": "Fé e Compromisso",
+      "title": "Um ato de amor ao próximo.",
+      "text": "Adoção espiritual não requer recursos financeiros, apenas o seu tempo e o seu coração voltados para Deus.",
+      "ctaPrimary": "Comece Agora",
+      "ctaSecondary": "Perguntas"
+    },
+    "scroll": "Role para ver mais"
+  },
+  "footer": {
+    "brand": {
+      "desc": "Um movimento de oração em defesa dos nascituros, protegendo a vida desde a concepção."
+    },
+    "links1": {
+      "title": "Adoção Espiritual",
+      "item1": "Quem somos",
+      "item2": "Fale conosco",
+      "item3": "Doe aqui",
+      "item4": "Downloads",
+      "item5": "Política de Privacidade"
+    },
+    "bottom": {
+      "rights": "© 2026 Adoção Espiritual. Todos os direitos reservados.",
+      "version": "v4.3",
+      "privacy": "Privacidade",
+      "terms": "Termos"
+    }
+  },
+  "highlights": {
+    "badge": "Fique por dentro",
+    "title": "Destaques & Notícias",
+    "view_all": "Ver todos",
+    "news1": {
+      "tag": "Igreja",
+      "title": "Os Papas sobre o Aborto",
+      "desc": "Confira o que os últimos Papas falaram sobre a importância de defender a vida desde a concepção.",
+      "read_more": "Leia mais"
+    },
+    "news2": {
+      "tag": "Testemunho",
+      "title": "Testemunhos de Vida",
+      "desc": "Relatos emocionantes de quem diz sim à vida mesmo em meio às dificuldades da gestação.",
+      "read_more": "Leia mais"
+    },
+    "news3": {
+      "tag": "Missão",
+      "title": "Em Defesa da Vida",
+      "desc": "Conheça as ações práticas que realizamos para proteger os que ainda não têm voz.",
+      "read_more": "Leia mais"
+    }
+  },
+  "links": {
+    "item1": {
+      "title": "Adoção Espiritual",
+      "subtitle": "EM DEFESA DA VIDA",
+      "description": "Tudo o que você precisa saber sobre a Adoção Espiritual."
+    },
+    "item2": {
+      "title": "INSTAGRAM",
+      "description": "Aqui nos comunicamos com você no dia a dia"
+    },
+    "item3": {
+      "title": "FACEBOOK",
+      "description": "Também estamos presentes por aqui, partilhando conteúdos diariamente"
+    },
+    "item4": {
+      "title": "YOUTUBE",
+      "description": "Acesse nosso canal e acompanhe conteúdos formativos e inspiradores"
+    },
+    "item5": {
+      "description": "Ficou com alguma dúvida? Entre em contato conosco!"
+    },
+    "item_app": {
+      "title": "MEU BEBÊ ESPIRITUAL",
+      "description": "Acompanhe o crescimento de seu bebê adotado espiritualmente.",
+      "download": "Baixe o aplicativo",
+      "android": "Android",
+      "ios": "iOS",
+      "or": "ou"
+    },
+    "item6": {
+      "description": "Se precisar, escreva para nós."
+    }
+  },
+  "general": {
+    "back": "Voltar"
+  }
+}

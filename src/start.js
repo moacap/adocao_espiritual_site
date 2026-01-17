@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import './style.css'
-import App from './App.vue'
+import AppStart from './AppStart.vue'
 import i18n from './i18n'
 
-const app = createApp(App)
+const app = createApp(AppStart)
 app.use(i18n)
 app.mount('#app')

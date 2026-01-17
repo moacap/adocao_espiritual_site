@@ -11,22 +11,22 @@ let slideInterval = null;
 
 const slides = computed(() => [
   {
-    tag: t('hero.slide1.tag'),
-    title: t('hero.slide1.title'),
-    text: t('hero.slide1.text'),
+    tag: t("hero.slide1.tag"),
+    title: t("hero.slide1.title"),
+    text: t("hero.slide1.text"),
     image:
       "https://cms.adocaoespiritualrio.org.br/uploads/banner_principal_0a4797804c.webp",
   },
   {
-    tag: t('hero.slide2.tag'),
-    title: t('hero.slide2.title'),
-    text: t('hero.slide2.text'),
+    tag: t("hero.slide2.tag"),
+    title: t("hero.slide2.title"),
+    text: t("hero.slide2.text"),
     image: bebeCrucifixo,
   },
   {
-    tag: t('hero.slide3.tag'),
-    title: t('hero.slide3.title'),
-    text: t('hero.slide3.text'),
+    tag: t("hero.slide3.tag"),
+    title: t("hero.slide3.title"),
+    text: t("hero.slide3.text"),
     image: maosBebe,
   },
 ]);
@@ -60,7 +60,7 @@ onUnmounted(() => {
 
 <template>
   <section
-    class="relative w-full aspect-[3/4] sm:aspect-[21/14] lg:aspect-[25/10] flex items-center justify-center overflow-hidden bg-site-dark"
+    class="relative w-full aspect-[3/4] sm:aspect-[21/14] lg:aspect-[25/14] flex items-center justify-center overflow-hidden bg-site-dark"
   >
     <!-- Carousel Backgrounds -->
     <div class="absolute inset-0 z-0">
@@ -77,33 +77,32 @@ onUnmounted(() => {
             class="w-full h-full object-cover transform scale-105"
             loading="lazy"
           />
-          <div class="absolute inset-0 bg-black/45"></div>
+          <div class="absolute inset-0 bg-black/40"></div>
         </div>
       </TransitionGroup>
     </div>
 
     <!-- Carousel Content -->
     <div
-      class="container relative z-10 text-center text-white px-4 pt-28 md:pt-36 lg:pt-24"
+      class="container relative z-10 text-center text-white px-4 pt-36 lg:pt-32"
     >
       <Transition name="fade-up" mode="out-in">
         <div :key="currentSlide" class="will-change-transform">
           <span
-            class="hero-tag text-[10px] md:text-lg font-bold uppercase tracking-[0.4em] mb-4 md:mb-6 block drop-shadow-md text-white/90"
+            class="hero-tag text-[10px] md:text-sm font-bold uppercase tracking-[0.4em] mb-2 md:mb-6 block drop-shadow-md text-white/90"
           >
             {{ slides[currentSlide].tag }}
           </span>
           <h1
-            class="hero-title text-3xl sm:text-5xl md:text-7xl lg:text-9xl font-serif leading-tight mb-4 md:mb-8 max-w-5xl mx-auto drop-shadow-2xl font-light italic"
+            class="hero-title text-2xl md:text-5xl lg:text-7xl font-serif leading-tight mb-2 md:mb-8 max-w-5xl mx-auto drop-shadow-2xl italic font-light"
           >
             {{ slides[currentSlide].title }}
           </h1>
           <p
-            class="hero-text text-sm sm:text-lg md:text-2xl lg:text-4xl font-light mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md italic"
+            class="hero-text text-sm sm:text-lg md:text-xl lg:text-2xl font-light mb-0 max-w-3xl mx-auto opacity-90 leading-relaxed drop-shadow-md italic"
           >
-            {{ slides[currentSlide].text }}
+            "{{ slides[currentSlide].text }}"
           </p>
-
         </div>
       </Transition>
     </div>
@@ -126,42 +125,23 @@ onUnmounted(() => {
 
     <!-- Navigation Dots -->
     <div
-      class="absolute bottom-12 left-1/2 -translate-x-1/2 z-30 flex space-x-4"
+      class="absolute bottom-10 md:bottom-24 lg:bottom-32 left-1/2 -translate-x-1/2 z-30 flex space-x-2 md:space-x-4"
     >
       <button
         v-for="(_, index) in slides"
         :key="index"
         @click="goToSlide(index)"
-        class="group relative p-2 outline-none"
+        class="group relative p-1 md:p-2 outline-none"
       >
         <div
-          class="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full transition-all duration-500"
+          class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-500"
           :class="[
             currentSlide === index
               ? 'bg-white scale-125'
               : 'bg-white/30 group-hover:bg-white/60',
           ]"
         ></div>
-        <div
-          v-if="currentSlide === index"
-          class="absolute inset-0 border border-white rounded-full animate-ping opacity-20"
-        ></div>
       </button>
-    </div>
-
-    <!-- Scroll Down Indicator -->
-    <div
-      class="absolute bottom-16 right-12 z-20 hidden md:flex flex-col items-center space-y-4 opacity-50"
-    >
-      <span
-        class="text-[10px] font-bold uppercase tracking-[0.3em] rotate-90 origin-right translate-y-12"
-        >{{ $t('hero.scroll') }}</span
-      >
-      <div class="w-px h-16 bg-white/30 relative overflow-hidden">
-        <div
-          class="absolute top-0 left-0 w-full h-1/2 bg-white animate-scroll-down"
-        ></div>
-      </div>
     </div>
   </section>
 </template>
@@ -189,41 +169,30 @@ onUnmounted(() => {
   transform: translateY(-20px);
 }
 
-@keyframes scroll-down {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(200%);
-  }
-}
-
-.animate-scroll-down {
-  animation: scroll-down 2s infinite ease-in-out;
+h1 {
+  letter-spacing: -0.02em;
 }
 
 /* Fluid typography that follows screen reduction */
 .hero-title {
-  font-size: clamp(1.75rem, 5vh, 8rem);
+  font-size: clamp(1.5rem, 5vh, 6rem);
   line-height: 1.1;
-  margin-bottom: clamp(1rem, 3vh, 2rem);
+  margin-bottom: clamp(0.5rem, 2vh, 2rem);
   letter-spacing: -0.02em;
 }
 
 .hero-text {
-  font-size: clamp(0.875rem, 3vh, 2.25rem);
+  font-size: clamp(0.75rem, 2.5vh, 1.5rem);
   line-height: 1.4;
-  margin-bottom: clamp(1.5rem, 4vh, 3rem);
 }
 
 /* Ensure visibility on small screens */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2rem !important;
+    font-size: 1.75rem !important;
   }
   .hero-text {
-    font-size: 1rem !important;
-    margin-bottom: 2rem;
+    font-size: 0.875rem !important;
   }
 }
 </style>
