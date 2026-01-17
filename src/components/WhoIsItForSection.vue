@@ -18,7 +18,7 @@
         </p>
       </div>
 
-      <div class="reveal reveal-delay-3 flex justify-center lg:justify-end mt-8">
+      <div class="reveal reveal-delay-3 flex justify-center mt-8">
         <a
           href="#"
           class="group relative inline-flex items-center h-12 pr-14 pl-6"
