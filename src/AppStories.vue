@@ -136,7 +136,7 @@ onMounted(() => {
               {{ story.description }}
             </p>
 
-            <div class="mt-auto flex justify-start">
+            <div class="mt-auto flex justify-center">
               <div class="relative inline-flex items-center h-10 pr-12 pl-0 transition-all">
                 <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap group-hover:px-4 transition-all duration-500">
                   Saiba mais
