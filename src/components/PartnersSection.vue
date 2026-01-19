@@ -6,34 +6,29 @@ const itemsToShow = ref(4);
 
 const partners = [
   {
-    name: "Vaticano",
-    logo: "https://loremflickr.com/600/400/vatican,church?lock=1",
-    link: "https://www.vatican.va",
+    name: "Comunidade Católica Jesus Menino",
+    logo: "/images/partners/jesus_menino.png",
+    link: "https://comunidadejesusmenino.org.br/",
   },
   {
-    name: "CNBB",
-    logo: "https://loremflickr.com/600/400/catholic,bible?lock=2",
-    link: "https://www.cnbb.org.br",
+    name: "Missão Duas Vidas",
+    logo: "/images/partners/missao_duas_vidas.png",
+    link: "https://missaoduasvidas.org/pt",
   },
   {
-    name: "Arquidiocese",
-    logo: "https://loremflickr.com/600/400/brazil,cathedral?lock=3",
-    link: "https://arqrio.org",
+    name: "Associação Guadalupe",
+    logo: "/images/partners/associacao_guadalupe.png",
+    link: "https://associacaoguadalupe.org.br/",
   },
   {
-    name: "Canção Nova",
-    logo: "https://loremflickr.com/600/400/catholic,event?lock=4",
-    link: "https://www.cancaonova.com",
+    name: "Comunidade Mãe do Verbo Divino",
+    logo: "/images/partners/cmvd.png",
+    link: "https://www.cmvd.org/",
   },
   {
-    name: "ACI Digital",
-    logo: "https://loremflickr.com/600/400/pope,news?lock=5",
-    link: "https://www.acidigital.com",
-  },
-  {
-    name: "Vatican News",
-    logo: "https://loremflickr.com/600/400/saint,statue?lock=6",
-    link: "https://www.vaticannews.va",
+    name: "Rede Nacional em Defesa da Vida e da Família",
+    logo: "/images/partners/rede_nacional_defesa_vida.png",
+    link: "https://redenacionalemdefesadavida.org/",
   },
 ];
 
