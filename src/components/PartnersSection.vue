@@ -1,5 +1,8 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import jesusMeninoLogo from '../assets/partners/jesus_menino.png';
+import missaoDuasVidasLogo from '../assets/partners/missao_duas_vidas.png';
+import associacaoGuadalupeLogo from '../assets/partners/associacao_guadalupe.png';
 import rndvfLogo from '../assets/RNDVF-logo-v5-final-noBorder.svg';
 import cmvdLogo from '../assets/cropped-CMVD-Por-Extensopng-1.png';
 
@@ -9,17 +12,17 @@ const itemsToShow = ref(4);
 const partners = [
   {
     name: "Comunidade Católica Jesus Menino",
-    logo: "/images/partners/jesus_menino.png",
+    logo: jesusMeninoLogo,
     link: "https://comunidadejesusmenino.org.br/",
   },
   {
     name: "Missão Duas Vidas",
-    logo: "/images/partners/missao_duas_vidas.png",
+    logo: missaoDuasVidasLogo,
     link: "https://missaoduasvidas.org/pt",
   },
   {
     name: "Associação Guadalupe",
-    logo: "/images/partners/associacao_guadalupe.png",
+    logo: associacaoGuadalupeLogo,
     link: "https://associacaoguadalupe.org.br/",
   },
   {
