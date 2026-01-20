@@ -13,7 +13,7 @@ const links = computed(() => [
     subtitle: t("links.item1.subtitle"),
     description: t("links.item1.description"),
     icon: aePretoLogo,
-    href: "/site_page.html",
+    href: "site_page.html",
   },
 
   {
