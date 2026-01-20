@@ -9,7 +9,7 @@ import PatronsSection from './components/PatronsSection.vue'
 import StoriesSection from './components/StoriesSection.vue'
 import PartnersSection from './components/PartnersSection.vue'
 import FormationSection from './components/FormationSection.vue'
-import FAQSection from './components/FAQSection.vue'
+// import FAQSection from './components/FAQSection.vue'
 import Footer from './components/Footer.vue'
 
 onMounted(() => {
@@ -44,7 +44,7 @@ onMounted(() => {
       <PartnersSection />
       <FormationSection />
       
-      <FAQSection />
+      <!-- <FAQSection /> -->
     </main>
     <Footer />
   </div>
