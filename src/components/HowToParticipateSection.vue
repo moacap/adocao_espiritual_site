@@ -39,7 +39,7 @@ onMounted(() => {
 
       <div class="reveal reveal-delay-3 mt-8">
         <a
-          href="#"
+          href="participar_info.html"
           class="group relative inline-flex items-center h-12 pr-14 pl-6"
         >
           <span
