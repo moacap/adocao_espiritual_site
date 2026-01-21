@@ -1,22 +1,8 @@
 import { createApp } from 'vue'
-import AppParticiparInfo from './AppParticiparInfo.vue'
-import { createI18n } from 'vue-i18n'
 import './style.css'
+import AppParticiparInfo from './AppParticiparInfo.vue'
+import i18n from './i18n'
 
-// Import translations
-import pt from './locales/pt.json'
-import en from './locales/en.json'
-import es from './locales/es.json'
-
-const i18n = createI18n({
-  legacy: false,
-  locale: localStorage.getItem('locale') || 'pt',
-  fallbackLocale: 'pt',
-  messages: {
-    pt,
-    en,
-    es
-  }
-})
-
-createApp(AppParticiparInfo).use(i18n).mount('#app')
+const app = createApp(AppParticiparInfo)
+app.use(i18n)
+app.mount('#app')
