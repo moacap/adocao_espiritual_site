@@ -38,9 +38,7 @@ onMounted(() => {
           <div
             class="reveal reveal-delay-2 space-y-6 text-site-dark/80 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0"
           >
-            <p>
-              {{ $t("stories.description") }}
-            </p>
+            <p v-html="$t('stories.description')"></p>
           </div>
 
           <div class="reveal reveal-delay-3 mt-8">
