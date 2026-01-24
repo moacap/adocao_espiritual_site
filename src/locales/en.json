@@ -114,6 +114,8 @@
   "faq": {
     "badge": "Common Questions",
     "title": "Frequently Asked Questions",
+    "description": "We have separated some common questions, but if these don't help you, please contact us. We are ready to help!",
+    "button": "Learn more",
     "q1": {
       "question": "Who can participate in Spiritual Adoption?",
       "answer": "Anyone: laypeople, religious, children, youth, and adults. All it takes is the desire to save a life through prayer."

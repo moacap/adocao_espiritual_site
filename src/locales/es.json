@@ -114,6 +114,8 @@
   "faq": {
     "badge": "Dudas Comunes",
     "title": "Preguntas Frecuentes",
+    "description": "Hemos separado algunas dudas comunes, pero si estas no te ayudan, ponte en contacto con nosotros. ¡Estamos listos para ayudarte!",
+    "button": "Saber más",
     "q1": {
       "question": "¿Quién puede participar en la Adopción Espiritual?",
       "answer": "Cualquier persona: laicos, religiosos, niños, jóvenes y adultos. Basta tener el deseo de salvar una vida a través de la oración."
