@@ -63,7 +63,7 @@ onMounted(() => {
   <section class="pt-5 pb-40 bg-site-beige relative overflow-hidden">
     <div class="container max-w-4xl mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="reveal reveal-delay-1 text-site-dark text-4xl md:text-5xl mb-6">
+        <h2 class="reveal reveal-delay-1 text-site-terracotta text-4xl md:text-5xl mb-6">
           {{ $t("faq.title") }}
         </h2>
         <p class="reveal reveal-delay-2 text-site-dark/70 text-lg max-w-2xl mx-auto">
