@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref } from "vue";
+import { computed, ref, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
@@ -39,16 +39,34 @@ const toggleFaq = (index) => {
 };
 
 const isFaqOpen = (index) => openIndices.value.has(index);
+
+onMounted(() => {
+  const observerOptions = {
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal-active");
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll(".reveal").forEach((el) => {
+    observer.observe(el);
+  });
+});
 </script>
 
 <template>
   <section class="pt-5 pb-40 bg-site-beige relative overflow-hidden">
     <div class="container max-w-4xl mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-site-dark text-4xl md:text-5xl mb-6">
+        <h2 class="reveal reveal-delay-1 text-site-dark text-4xl md:text-5xl mb-6">
           {{ $t("faq.title") }}
         </h2>
-        <p class="text-site-dark/70 text-lg max-w-2xl mx-auto">
+        <p class="reveal reveal-delay-2 text-site-dark/70 text-lg max-w-2xl mx-auto">
           {{ $t("faq.description") }}
         </p>
       </div>
@@ -57,7 +75,7 @@ const isFaqOpen = (index) => openIndices.value.has(index);
         <div
           v-for="(faq, index) in faqs"
           :key="index"
-          class="bg-white rounded-sm overflow-hidden shadow-sm border border-black/5"
+          class="reveal reveal-delay-3 bg-white rounded-sm overflow-hidden shadow-sm border border-black/5"
         >
           <button
             @click="toggleFaq(index)"
