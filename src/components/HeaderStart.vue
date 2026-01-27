@@ -56,7 +56,7 @@ onUnmounted(() => {
         </a>
 
         <!-- Right Side Group (Social + Language) -->
-        <div class="flex items-center gap-4 md:gap-6">
+        <div class="flex items-center gap-2 md:gap-4">
           <!-- Social Icons -->
           <template v-if="!hideSocial">
             <div
