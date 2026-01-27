@@ -56,7 +56,7 @@ onUnmounted(() => {
         </a>
 
         <!-- Right Side Group (Social + Language) -->
-        <div class="flex items-center gap-3 md:gap-6">
+        <div class="flex items-center gap-1.5 md:gap-3">
           <!-- Social Icons -->
           <template v-if="!hideSocial">
             <div
@@ -90,7 +90,7 @@ onUnmounted(() => {
             </div>
 
             <div
-              class="w-px h-4 ml-4 md:ml-8"
+              class="w-px h-4 ml-2 md:ml-4"
               :class="showOpaque ? 'bg-black/10' : 'bg-white/20'"
             ></div>
           </template>

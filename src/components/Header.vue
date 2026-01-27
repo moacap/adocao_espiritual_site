@@ -45,7 +45,7 @@ onUnmounted(() => {
         </a>
 
         <!-- Right Side Group (Social + Language) -->
-        <div class="flex items-center gap-3 md:gap-6">
+        <div class="flex items-center gap-1.5 md:gap-3">
           <!-- Social Icons -->
           <div
             class="flex items-center gap-5 md:gap-8 transition-colors duration-300"
@@ -78,7 +78,7 @@ onUnmounted(() => {
           </div>
 
           <div
-            class="w-px h-4 ml-4 md:ml-8"
+            class="w-px h-4 ml-2 md:ml-4"
             :class="isSticky ? 'bg-black/10' : 'bg-white/20'"
           ></div>
           <!-- Subtle Divider -->
