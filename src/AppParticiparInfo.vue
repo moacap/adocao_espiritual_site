@@ -98,7 +98,7 @@ const goBack = () => {
         <!-- Back Button -->
         <!-- Back Button -->
         <div 
-          class="fixed left-1/2 -translate-x-1/2 z-50 will-change-auto"
+          class="fixed right-6 md:right-12 z-50 will-change-auto"
           :style="{ bottom: buttonBottom }"
         >
           <button
