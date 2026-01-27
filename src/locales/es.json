@@ -536,5 +536,117 @@
       "p9": "Esta es la primera vez que una familia entera fue beatificada y que un nascituro recibió el título de beato por la Iglesia Católica. Durante la homilía de la misa de beatificación de la familia Ulma, el Cardenal Semeraro destacó el valor de la santidad conyugal y el testimonio cristiano del nascituro Ulma, que \"sin haber pronunciado nunca una palabra\", dijo él, \"hoy el pequeño Beato clama al mundo moderno para acoger, amar y proteger la vida, especialmente la de los indefensos y marginados, desde el momento de la concepción hasta la muerte natural\".",
       "p10": "La familia Ulma se conmemora litúrgicamente el 7 de julio, fecha de la unión matrimonial de Józef y Wiktoria."
     }
+  },
+  "formation_page": {
+    "title": "Formación",
+    "intro": "Conoce los documentos y enseñanzas de la Iglesia que fundamentan la defensa de la vida humana desde la concepción hasta su fin natural.",
+    "docs": {
+      "cic": {
+        "title": "1) Catecismo de la Iglesia Católica (CIC) — “El Quinto Mandamiento”",
+        "url": "https://www.vatican.va/archive/catechism_sp/index_sp.html",
+        "about": "De qué trata: síntesis normativa de la fe y la moral católicas; aquí está el núcleo más “didáctico” y universal de la doctrina sobre vida, aborto, eutanasia, etc.",
+        "refs_title": "Defensa de la vida (referencias):",
+        "refs": [
+          "Sacralidad de la vida humana y prohibición de matar al inocente: CIC 2258 (vida sagrada; sólo Dios es Señor de la vida).",
+          "Aborto (doctrina y gravedad): CIC 2270–2275 (vida desde la concepción; aborto directo; cooperación y gravedad; deber de protección jurídica; embrión como persona; diagnóstico prenatal; intervenciones lícitas/ilícitas; rechazo de embriones como “material”).",
+          "Eutanasia y fin de la vida: CIC 2276–2279 (eutanasia directa moralmente inaceptable; rechazo del “encarnizamiento terapéutico”; cuidados paliativos)."
+        ]
+      },
+      "ev": {
+        "title": "2) San Juan Pablo II — Encíclica Evangelium Vitae (1995) (El Evangelio de la Vida)",
+        "url": "https://www.vatican.va/content/john-paul-ii/es/encyclicals/documents/hf_jp-ii_enc_25031995_evangelium-vitae.html",
+        "about": "De qué trata: documento de referencia del Magisterio moderno sobre la dignidad de la vida humana, “cultura de la vida” vs “cultura de la muerte”, y deber moral, social y jurídico de proteger a los inocentes.",
+        "refs_title": "Defensa de la vida (referencias):",
+        "refs": [
+          "Aborto como crimen gravísimo (núcleo clásico): EV 57–58 (valor absoluto del “no matarás” para el inocente; aborto provocado como particularmente grave).",
+          "Condena del aborto y obligación moral de rechazarlo: EV 58–62 (desarrolla razones y responsabilidades; reafirma gravedad moral).",
+          "Eutanasia: EV 64–67 (define/explica la ilicitud moral; distinciones morales en el cuidado al enfermo).",
+          "Deber de los cristianos en la vida pública y leyes injustas contra la vida (objeción de conciencia, acción legislativa, etc.): EV 72–74."
+        ]
+      },
+      "gs": {
+        "title": "3) Concilio Vaticano II — Constitución Pastoral Gaudium et Spes (1965) (La Iglesia en el mundo actual)",
+        "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_sp.html",
+        "about": "De qué trata: visión conciliar sobre la persona humana, dignidad, sociedad, familia y vida.",
+        "refs_title": "Defensa de la vida (referencias):",
+        "refs": [
+          "Condena explícita de los atentados contra la vida: GS 27 (incluye aborto y eutanasia entre “ofensas contra la vida”).",
+          "Protección de la vida desde la concepción; aborto e infanticidio: GS 51 (la vida debe ser protegida con el máximo cuidado desde la concepción; el aborto y el infanticidio son crímenes abominables)."
+        ]
+      },
+      "dicastery": {
+        "title": "4) Documentos del Dicasterio para la Doctrina de la Fe (antiguamente: Congregación para la Doctrina de la Fe)",
+        "docs": {
+          "dv": {
+            "title": "Instrucción Donum Vitae (1987) (sobre el respeto de la vida humana naciente y la dignidad de la procreación)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19870222_respect-for-human-life_sp.html",
+            "about": "De qué trata: principios sobre la vida naciente, procreación humana y evaluación moral de técnicas biomédicas (FIV, manipulación de embriones, etc.).",
+            "refs_title": "Defensa de la vida (referencias típicas del documento):",
+            "refs": [
+              "Principio base: inviolabilidad de la vida humana desde la concepción y dignidad del embrión (Introducción / Parte I).",
+              "Criterios morales para intervenciones e investigación: respeto a la persona/embrión; rechazo de producción/uso instrumental de embriones (Partes II–III, según la numeración interna del texto)."
+            ]
+          },
+          "dp": {
+            "title": "Instrucción Dignitas Personae (2008) (Sobre algunas cuestiones de bioética)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20081208_dignitas-personae_sp.html",
+            "about": "De qué trata: actualización de Donum Vitae ante nuevas técnicas (diagnóstico preimplantacional, congelación, reducción embrionaria, intercepción/contragestación, etc.).",
+            "refs_title": "Defensa de la vida (referencias):",
+            "refs": [
+              "Aborto: definición e ilicitud; “intercepción/contragestación” como participación en el aborto: DP (texto, sección sobre aborto) — el documento afirma expresamente que tales medios “caen en el pecado del aborto”.",
+              "Principio: dignidad del embrión y exigencia de tutela jurídica del nasciturus: el texto remite al deber de protección y a la línea de EV.",
+              "Críticas morales a prácticas que tratan al embrión como “material” (p. ej., selección, descarte, instrumentalización): desarrollado en varios pasajes del documento."
+            ]
+          },
+          "di": {
+            "title": "Declaración Dignitas Infinita (2024) (Sobre la dignidad humana)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20240402_dignitas-infinita_sp.html",
+            "about": "De qué trata: panorama actual de violaciones graves a la dignidad humana, reafirmando fundamentos y aplicándolos a temas contemporáneos.",
+            "refs_title": "Defensa de la vida (referencias):",
+            "refs": [
+              "Lista explícita de “ofensas contra la vida”: incluye aborto, eutanasia y suicidio voluntario como contrarios a la dignidad humana (en la sección que cita GS 27).",
+              "Aplicaciones y desarrollo del principio de dignidad (vida en todas las fases): el texto amplía implicaciones sociales y éticas a partir de este núcleo."
+            ]
+          },
+          "ap": {
+            "title": "Declaración sobre el Aborto Provocado (1974)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19741118_declaration-abortion_sp.html",
+            "about": "De qué trata: defensa doctrinal y moral contra la liberalización del aborto; fundamentos de razón, ética y fe.",
+            "refs_title": "Defensa de la vida (referencias):",
+            "refs": [
+              "Introducción y desarrollo: afirma la vida humana como “valor primordial” a proteger; denuncia argumentos de liberalización y reafirma el deber moral de la Iglesia (Introducción, nn. 1–2, y secuencia del texto)."
+            ]
+          },
+          "eb": {
+            "title": "Declaración sobre la Eutanasia Iura et Bona (1980)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19800505_euthanasia_sp.html",
+            "about": "De qué trata: doctrina católica sobre eutanasia, valor del sufrimiento, proporcionalidad terapéutica y límites morales en el fin de la vida.",
+            "refs_title": "Defensa de la vida (referencias):",
+            "refs": [
+              "Base conciliar: cita GS 27 sobre crímenes contra la vida.",
+              "Valor de la vida humana y rechazo de la eutanasia: desarrollo en I. Valor de la vida humana y secciones siguientes (criterios para decisiones clínicas, intención, medios proporcionados, etc.)."
+            ]
+          },
+          "np": {
+            "title": "Nota Doctrinal sobre algunas cuestiones relativas al compromiso y la conducta de los católicos en la vida política (2002)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20021124_politica_sp.html",
+            "about": "De qué trata: principios morales no negociables y deber del católico en el espacio público.",
+            "refs_title": "Defensa de la vida (referencias):",
+            "refs": [
+              "Afirma que hay principios que no admiten excepción/compromiso, citando explícitamente leyes sobre aborto y eutanasia y el deber de defender el derecho a la vida desde la concepción hasta la muerte natural."
+            ]
+          },
+          "ep": {
+            "title": "Aclaración sobre el aborto provocado (2009)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20090711_aborto-procurato_sp.html",
+            "about": "De qué trata: Aclaraciones disciplinares y doctrinales que retoman la gravedad del aborto y la obligación moral de rechazarlo, en continuidad con la enseñanza conciliar y del Catecismo.",
+            "refs_title": "Defensa de la vida (referencias):",
+            "refs": [
+              "Afirma que hay principios que no admiten excepción/compromiso, citando explícitamente leyes sobre aborto y eutanasia y el deber de defender el derecho a la vida desde la concepción hasta la muerte natural (En continuidad con GS 51 y CIC 2270–2275)"
+            ]
+          }
+        }
+      }
+    }
   }
 }

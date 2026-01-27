@@ -28,6 +28,7 @@ export default defineConfig({
         familia_ulma: resolve(__dirname, 'familia_ulma.html'),
         who_we_are: resolve(__dirname, 'who_we_are.html'),
         site_page: resolve(__dirname, 'site_page.html'),
+        formation: resolve(__dirname, 'formation.html'),
       },
     },
   },

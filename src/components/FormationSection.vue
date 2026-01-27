@@ -41,7 +41,7 @@ onMounted(() => {
 
         <div class="reveal reveal-delay-3 flex justify-center mt-8">
           <a
-            href="#"
+            href="formation.html"
             class="group relative inline-flex items-center h-12 pr-14 pl-6"
           >
             <span

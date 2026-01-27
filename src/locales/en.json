@@ -540,5 +540,117 @@
       "p9": "This is the first time an entire family has been beatified and that an unborn child received the title of blessed by the Catholic Church. During the homily of the beatification mass of the Ulma family, Cardinal Semeraro highlighted the value of marital holiness and the Christian witness of the unborn child Ulma, who \"without ever having pronounced a word\", he said, \"today the little Blessed cries out to the modern world to welcome, love and protect life, especially that of the defenseless and marginalized, from the moment of conception until natural death\".",
       "p10": "The Ulma family is liturgically commemorated on July 7, since it's the date of the marriage of Józef and Wiktoria."
     }
+  },
+  "formation_page": {
+    "title": "Formation",
+    "intro": "Discover the documents and teachings of the Church that underpin the defense of human life from conception to its natural end.",
+    "docs": {
+      "cic": {
+        "title": "1) Catechism of the Catholic Church (CCC) — “The Fifth Commandment”",
+        "url": "https://www.vatican.va/archive/ENG0015/_INDEX.HTM",
+        "about": "What it covers: normative synthesis of Catholic faith and morals; here is the most “didactic” and universal core of the doctrine on life, abortion, euthanasia, etc.",
+        "refs_title": "Defense of life (references):",
+        "refs": [
+          "Sacredness of human life and prohibition of killing the innocent: CCC 2258 (sacred life; God alone is the Lord of life).",
+          "Abortion (doctrine and gravity): CCC 2270–2275 (life from conception; direct abortion; cooperation and gravity; duty of legal protection; embryo as a person; prenatal diagnosis; licit/illicit interventions; rejection of embryos as “material”).",
+          "Euthanasia and end of life: CCC 2276–2279 (direct euthanasia morally unacceptable; refusal of “therapeutic obstinacy”; palliative care)."
+        ]
+      },
+      "ev": {
+        "title": "2) St. John Paul II — Encyclical Evangelium Vitae (1995) (The Gospel of Life)",
+        "url": "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_25031995_evangelium-vitae.html",
+        "about": "What it covers: reference document of the modern Magisterium on the dignity of human life, “culture of life” vs “culture of death”, and the moral, social, and legal duty to protect the innocent.",
+        "refs_title": "Defense of life (references):",
+        "refs": [
+          "Abortion as a very grave crime (classic core): EV 57–58 (absolute value of “thou shalt not kill” for the innocent; procured abortion as particularly grave).",
+          "Condemnation of abortion and moral obligation to reject it: EV 58–62 (develops reasons and responsibilities; reaffirms moral gravity).",
+          "Euthanasia: EV 64–67 (defines/explains moral illicitness; moral distinctions in care for the sick).",
+          "Duty of Christians in public life and unjust laws against life (conscientious objection, legislative action, etc.): EV 72–74."
+        ]
+      },
+      "gs": {
+        "title": "3) Second Vatican Council — Pastoral Constitution Gaudium et Spes (1965) (The Church in the Modern World)",
+        "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_en.html",
+        "about": "What it covers: conciliar vision on the human person, dignity, society, family, and life.",
+        "refs_title": "Defense of life (references):",
+        "refs": [
+          "Explicit condemnation of attacks against life: GS 27 (includes abortion and euthanasia among “offenses against life”).",
+          "Protection of life from conception; abortion and infanticide: GS 51 (life must be safeguarded with extreme care from conception; abortion and infanticide are abominable crimes)."
+        ]
+      },
+      "dicastery": {
+        "title": "4) Documents of the Dicastery for the Doctrine of the Faith (formerly: Congregation for the Doctrine of the Faith)",
+        "docs": {
+          "dv": {
+            "title": "Instruction Donum Vitae (1987) (on respect for human life in its origin and on the dignity of procreation)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19870222_respect-for-human-life_en.html",
+            "about": "What it covers: principles on nascent life, human procreation, and moral evaluation of biomedical techniques (IVF, manipulation of embryos, etc.).",
+            "refs_title": "Defense of life (typical references from the document):",
+            "refs": [
+              "Base principle: inviolability of human life from conception and dignity of the embryo (Introduction / Part I).",
+              "Moral criteria for interventions and research: respect for the person/embryo; rejection of production/instrumental use of embryos (Parts II–III, according to the internal numbering of the text)."
+            ]
+          },
+          "dp": {
+            "title": "Instruction Dignitas Personae (2008) (On Certain Bioethical Questions)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20081208_dignitas-personae_en.html",
+            "about": "What it covers: update of Donum Vitae regarding new techniques (pre-implantation diagnosis, freezing, embryonic reduction, interception/contragestation, etc.).",
+            "refs_title": "Defense of life (references):",
+            "refs": [
+              "Abortion: definition and illicitness; “interception/contragestation” as participation in abortion: DP (text, section on abortion) — the document expressly states that such means “fall within the sin of abortion”.",
+              "Principle: dignity of the embryo and requirement of legal protection of the unborn: the text refers to the duty of protection and the line of EV.",
+              "Moral criticisms of practices that treat the embryo as “material” (e.g., selection, disposal, instrumentalization): developed in several passages of the document."
+            ]
+          },
+          "di": {
+            "title": "Declaration Dignitas Infinita (2024) (On Human Dignity)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_ddf_doc_20240402_dignitas-infinita_en.html",
+            "about": "What it covers: current overview of grave violations of human dignity, reaffirming foundations and applying them to contemporary themes.",
+            "refs_title": "Defense of life (references):",
+            "refs": [
+              "Explicit list of “offenses against life”: includes abortion, euthanasia, and voluntary suicide as contrary to human dignity (in the section citing GS 27).",
+              "Applications and development of the dignity principle (life in all stages): the text expands social and ethical implications from this core."
+            ]
+          },
+          "ap": {
+            "title": "Declaration on Procured Abortion (1974)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19741118_declaration-abortion_en.html",
+            "about": "What it covers: doctrinal and moral defense against the liberalization of abortion; foundations of reason, ethics, and faith.",
+            "refs_title": "Defense of life (references):",
+            "refs": [
+              "Introduction and development: affirms human life as a “primordial value” to be protected; denounces arguments for liberalization and reaffirms the Church's moral duty (Introduction, nos. 1–2, and following text)."
+            ]
+          },
+          "eb": {
+            "title": "Declaration on Euthanasia Iura et Bona (1980)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_19800505_euthanasia_en.html",
+            "about": "What it covers: Catholic doctrine on euthanasia, value of suffering, therapeutic proportionality, and moral limits at the end of life.",
+            "refs_title": "Defense of life (references):",
+            "refs": [
+              "Conciliar base: cites GS 27 on crimes against life.",
+              "Value of human life and rejection of euthanasia: development in I. Value of human life and following sections (criteria for clinical decisions, intention, proportionate means, etc.)."
+            ]
+          },
+          "np": {
+            "title": "Doctrinal Note on some questions regarding the participation of Catholics in political life (2002)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20021124_politica_en.html",
+            "about": "What it covers: non-negotiable moral principles and the duty of Catholics in the public sphere.",
+            "refs_title": "Defense of life (references):",
+            "refs": [
+              "States that there are principles that admit no exception/compromise, explicitly citing laws on abortion and euthanasia and the duty to defend the right to life from conception to natural death."
+            ]
+          },
+          "ep": {
+            "title": "Clarification on Procured Abortion (2009)",
+            "url": "https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20090711_aborto-procurato_en.html",
+            "about": "What it covers: Disciplinary and doctrinal clarifications regarding the gravity of abortion and the moral obligation to reject it, in continuity with conciliar teaching and the Catechism.",
+            "refs_title": "Defense of life (references):",
+            "refs": [
+              "States that there are principles that admit no exception/compromise, explicitly citing laws on abortion and euthanasia and the duty to defend the right to life from conception to natural death (In continuity with GS 51 and CCC 2270–2275)."
+            ]
+          }
+        }
+      }
+    }
   }
 }
