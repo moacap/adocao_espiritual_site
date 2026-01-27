@@ -60,7 +60,7 @@ onUnmounted(() => {
           <!-- Social Icons -->
           <template v-if="!hideSocial">
             <div
-              class="flex items-center gap-2 md:gap-4 transition-colors duration-300"
+              class="flex items-center gap-5 md:gap-8 transition-colors duration-300"
               :class="showOpaque ? 'text-site-dark/60' : 'text-white/80'"
             >
               <a
@@ -90,7 +90,7 @@ onUnmounted(() => {
             </div>
 
             <div
-              class="w-px h-4"
+              class="w-px h-4 ml-4 md:ml-8"
               :class="showOpaque ? 'bg-black/10' : 'bg-white/20'"
             ></div>
           </template>

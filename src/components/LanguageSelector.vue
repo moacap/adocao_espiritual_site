@@ -44,28 +44,33 @@ const closeDropdown = () => {
       <button 
         type="button" 
         @click="toggleDropdown"
-        class="flex items-center gap-2 px-3 py-1.5 rounded-full transition-colors focus:outline-none"
+        class="flex items-center gap-2 px-3 py-1.5 rounded-full transition-colors focus:outline-none select-none"
         :class="isWhite ? 'hover:bg-black/5' : 'hover:bg-white/10'"
         id="language-menu-button"
         aria-expanded="true" 
         aria-haspopup="true"
       >
-        <img :src="currentLang.flag" :alt="currentLang.name" class="w-4 h-auto rounded-[1px] shadow-sm" />
-        <span 
-          class="text-[11px] font-bold tracking-widest uppercase"
-          :class="isWhite ? 'text-site-dark/80' : 'text-white'"
-        >
-          {{ currentLang.code }}
-        </span>
+        <!-- Chevron -->
         <svg 
-          class="w-3 h-3 opacity-40 transition-transform duration-200" 
-          :class="[isWhite ? 'text-site-dark' : 'text-white', isOpen ? 'rotate-180' : '']"
+          class="w-3.5 h-3.5 transition-transform duration-200" 
+          :class="[isWhite ? 'text-site-dark/60' : 'text-white/80', isOpen ? 'rotate-180' : '']"
           fill="none" 
           stroke="currentColor" 
           viewBox="0 0 24 24"
         >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
         </svg>
+
+        <!-- Language Code -->
+        <span 
+          class="text-sm font-bold tracking-wide uppercase"
+          :class="isWhite ? 'text-site-dark' : 'text-white'"
+        >
+          {{ currentLang.code }}
+        </span>
+
+        <!-- Flag -->
+        <img :src="currentLang.flag" :alt="currentLang.name" class="w-5 h-3.5 object-cover rounded-[2px] shadow-sm ml-0.5" />
       </button>
     </div>
 
