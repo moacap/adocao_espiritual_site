@@ -1,6 +1,39 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 import HeaderStart from "./components/HeaderStart.vue";
 import Footer from "./components/Footer.vue";
+
+const { t } = useI18n();
+
+const footerRef = ref(null);
+const buttonBottom = ref('2rem'); // 32px standard spacing
+
+const handleScroll = () => {
+  if (!footerRef.value) return;
+  const footerRect = footerRef.value.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  if (footerRect.top < windowHeight) {
+    // Footer is entering the viewport
+    const overlap = windowHeight - footerRect.top;
+    // Push the button up by the overlap amount + original spacing
+    buttonBottom.value = `${32 + overlap}px`;
+  } else {
+    buttonBottom.value = '2rem';
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleScroll);
+  handleScroll(); // Initial check
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener('resize', handleScroll);
+});
 
 const goBack = () => {
   if (window.history.length > 1) {
@@ -20,123 +53,126 @@ const goBack = () => {
         <h1
           class="text-4xl md:text-5xl font-serif text-site-terracotta mb-12 text-center"
         >
-          {{ $t("what_is_page.title") }}
+          {{ t("what_is_page.title") }}
         </h1>
 
         <div class="prose prose-lg text-site-dark/80 max-w-none text-justify">
-          <p>{{ $t("what_is_page.intro_p1") }}</p>
-          <p>{{ $t("what_is_page.intro_p2") }}</p>
+          <p>{{ t("what_is_page.intro_p1") }}</p>
+          <p>{{ t("what_is_page.intro_p2") }}</p>
 
           <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("what_is_page.manifesto.title") }}
+            {{ t("what_is_page.manifesto.title") }}
           </h2>
-          <p>{{ $t("what_is_page.manifesto.p1") }}</p>
-          <p>{{ $t("what_is_page.manifesto.p2") }}</p>
-          <p>{{ $t("what_is_page.manifesto.p3") }}</p>
+          <p>{{ t("what_is_page.manifesto.p1") }}</p>
+          <p>{{ t("what_is_page.manifesto.p2") }}</p>
+          <p>{{ t("what_is_page.manifesto.p3") }}</p>
 
           <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("what_is_page.child_gesture.title") }}
+            {{ t("what_is_page.child_gesture.title") }}
           </h2>
-          <p>{{ $t("what_is_page.child_gesture.p1") }}</p>
-          <p>{{ $t("what_is_page.child_gesture.p2") }}</p>
-          <p>{{ $t("what_is_page.child_gesture.p3") }}</p>
-          <p>{{ $t("what_is_page.child_gesture.p4") }}</p>
+          <p>{{ t("what_is_page.child_gesture.p1") }}</p>
+          <p>{{ t("what_is_page.child_gesture.p2") }}</p>
+          <p>{{ t("what_is_page.child_gesture.p3") }}</p>
+          <p>{{ t("what_is_page.child_gesture.p4") }}</p>
 
           <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("what_is_page.mother_gesture.title") }}
+            {{ t("what_is_page.mother_gesture.title") }}
           </h2>
-          <p>{{ $t("what_is_page.mother_gesture.p1") }}</p>
-          <p>{{ $t("what_is_page.mother_gesture.p2") }}</p>
+          <p>{{ t("what_is_page.mother_gesture.p1") }}</p>
+          <p>{{ t("what_is_page.mother_gesture.p2") }}</p>
           <ul class="space-y-4 my-6 list-none pl-0">
             <li class="flex items-start gap-3 bg-site-terracotta/5 p-4 rounded-lg">
               <span class="text-site-terracotta mt-1">•</span>
-              <span>{{ $t("what_is_page.mother_gesture.bullet1") }}</span>
+              <span>{{ t("what_is_page.mother_gesture.bullet1") }}</span>
             </li>
             <li class="flex items-start gap-3 bg-site-terracotta/5 p-4 rounded-lg">
               <span class="text-site-terracotta mt-1">•</span>
-              <span>{{ $t("what_is_page.mother_gesture.bullet2") }}</span>
+              <span>{{ t("what_is_page.mother_gesture.bullet2") }}</span>
             </li>
             <li class="flex items-start gap-3 bg-site-terracotta/5 p-4 rounded-lg">
               <span class="text-site-terracotta mt-1">•</span>
-              <span>{{ $t("what_is_page.mother_gesture.bullet3") }}</span>
+              <span>{{ t("what_is_page.mother_gesture.bullet3") }}</span>
             </li>
           </ul>
 
           <h3 class="text-xl font-serif text-site-terracotta mt-10 mb-4 italic">
-            {{ $t("what_is_page.physical_consequences.title") }}
+            {{ t("what_is_page.physical_consequences.title") }}
           </h3>
-          <p>{{ $t("what_is_page.physical_consequences.text") }}</p>
+          <p>{{ t("what_is_page.physical_consequences.text") }}</p>
 
           <h3 class="text-xl font-serif text-site-terracotta mt-10 mb-4 italic">
-            {{ $t("what_is_page.psychological_consequences.title") }}
+            {{ t("what_is_page.psychological_consequences.title") }}
           </h3>
-          <p>{{ $t("what_is_page.psychological_consequences.p1") }}</p>
-          <p>{{ $t("what_is_page.psychological_consequences.p2") }}</p>
-          <p>{{ $t("what_is_page.psychological_consequences.p3") }}</p>
-          <p>{{ $t("what_is_page.psychological_consequences.p4") }}</p>
+          <p>{{ t("what_is_page.psychological_consequences.p1") }}</p>
+          <p>{{ t("what_is_page.psychological_consequences.p2") }}</p>
+          <p>{{ t("what_is_page.psychological_consequences.p3") }}</p>
+          <p>{{ t("what_is_page.psychological_consequences.p4") }}</p>
 
           <h2 class="text-2xl font-serif text-site-terracotta mt-12 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("what_is_page.spiritual_consequences.title") }}
+            {{ t("what_is_page.spiritual_consequences.title") }}
           </h2>
-          <p>{{ $t("what_is_page.spiritual_consequences.p1") }}</p>
-          <p>{{ $t("what_is_page.spiritual_consequences.p2") }}</p>
-          <p>{{ $t("what_is_page.spiritual_consequences.p3") }}</p>
-          <p>{{ $t("what_is_page.spiritual_consequences.p4") }}</p>
+          <p>{{ t("what_is_page.spiritual_consequences.p1") }}</p>
+          <p>{{ t("what_is_page.spiritual_consequences.p2") }}</p>
+          <p>{{ t("what_is_page.spiritual_consequences.p3") }}</p>
+          <p>{{ t("what_is_page.spiritual_consequences.p4") }}</p>
           
-          <p class="font-bold text-site-terracotta mt-8">{{ $t("what_is_page.spiritual_consequences.citations_intro") }}</p>
+          <p class="font-bold text-site-terracotta mt-8">{{ t("what_is_page.spiritual_consequences.citations_intro") }}</p>
 
           <div class="mt-8 space-y-10 pl-4 border-l-2 border-site-terracotta/30">
             <section>
               <h4 class="text-lg font-bold text-site-terracotta mb-4 uppercase tracking-wider text-sm">
-                {{ $t("what_is_page.spiritual_consequences.donum_vitae.title") }}
+                {{ t("what_is_page.spiritual_consequences.donum_vitae.title") }}
               </h4>
               <blockquote class="italic text-site-dark/70 my-4">
-                {{ $t("what_is_page.spiritual_consequences.donum_vitae.quote1") }}
+                {{ t("what_is_page.spiritual_consequences.donum_vitae.quote1") }}
               </blockquote>
               <blockquote class="italic text-site-dark/70 my-4">
-                {{ $t("what_is_page.spiritual_consequences.donum_vitae.quote2") }}
-              </blockquote>
-            </section>
-
-            <section>
-              <h4 class="text-lg font-bold text-site-terracotta mb-4 uppercase tracking-wider text-sm">
-                {{ $t("what_is_page.spiritual_consequences.gaudium_et_spes.title") }}
-              </h4>
-              <blockquote class="italic text-site-dark/70 my-4">
-                {{ $t("what_is_page.spiritual_consequences.gaudium_et_spes.quote") }}
+                {{ t("what_is_page.spiritual_consequences.donum_vitae.quote2") }}
               </blockquote>
             </section>
 
             <section>
               <h4 class="text-lg font-bold text-site-terracotta mb-4 uppercase tracking-wider text-sm">
-                {{ $t("what_is_page.spiritual_consequences.catechism.title") }}
+                {{ t("what_is_page.spiritual_consequences.gaudium_et_spes.title") }}
               </h4>
-              <p>{{ $t("what_is_page.spiritual_consequences.catechism.p2271") }}</p>
-              <p>{{ $t("what_is_page.spiritual_consequences.catechism.p2272") }}</p>
+              <blockquote class="italic text-site-dark/70 my-4">
+                {{ t("what_is_page.spiritual_consequences.gaudium_et_spes.quote") }}
+              </blockquote>
+            </section>
+
+            <section>
+              <h4 class="text-lg font-bold text-site-terracotta mb-4 uppercase tracking-wider text-sm">
+                {{ t("what_is_page.spiritual_consequences.catechism.title") }}
+              </h4>
+              <p>{{ t("what_is_page.spiritual_consequences.catechism.p2271") }}</p>
+              <p>{{ t("what_is_page.spiritual_consequences.catechism.p2272") }}</p>
             </section>
           </div>
 
           <h2 class="text-2xl font-serif text-site-terracotta mt-16 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("what_is_page.family_gesture.title") }}
+            {{ t("what_is_page.family_gesture.title") }}
           </h2>
-          <p>{{ $t("what_is_page.family_gesture.p1") }}</p>
-          <p>{{ $t("what_is_page.family_gesture.p2") }}</p>
-          <p>{{ $t("what_is_page.family_gesture.p3") }}</p>
-          <p>{{ $t("what_is_page.family_gesture.p4") }}</p>
+          <p>{{ t("what_is_page.family_gesture.p1") }}</p>
+          <p>{{ t("what_is_page.family_gesture.p2") }}</p>
+          <p>{{ t("what_is_page.family_gesture.p3") }}</p>
+          <p>{{ t("what_is_page.family_gesture.p4") }}</p>
 
           <h2 class="text-2xl font-serif text-site-terracotta mt-16 mb-6 border-b border-site-terracotta/20 pb-2">
-            {{ $t("what_is_page.history.title") }}
+            {{ t("what_is_page.history.title") }}
           </h2>
-          <p>{{ $t("what_is_page.history.p1") }}</p>
-          <p>{{ $t("what_is_page.history.p2") }}</p>
-          <p>{{ $t("what_is_page.history.p3") }}</p>
+          <p>{{ t("what_is_page.history.p1") }}</p>
+          <p>{{ t("what_is_page.history.p2") }}</p>
+          <p>{{ t("what_is_page.history.p3") }}</p>
         </div>
 
         <!-- Back Button -->
-        <div class="mt-20 flex justify-center">
+        <div 
+          class="fixed right-6 md:right-12 z-50 will-change-auto"
+          :style="{ bottom: buttonBottom }"
+        >
           <button
             @click="goBack"
-            class="group relative inline-flex items-center h-12 pl-14 pr-6"
+            class="group relative inline-flex items-center h-12 pl-14 pr-6 bg-white/90 backdrop-blur rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <div
               class="absolute left-0 top-0 h-full w-12 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0"
@@ -163,14 +199,16 @@ const goBack = () => {
             <span
               class="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap"
             >
-              {{ $t("general.back") }}
+              {{ t("general.back") }}
             </span>
           </button>
         </div>
       </div>
     </main>
 
-    <Footer />
+    <div ref="footerRef">
+      <Footer />
+    </div>
   </div>
 </template>
 
