@@ -72,80 +72,59 @@ onMounted(() => {
         class="relative max-w-5xl mx-auto reveal reveal-delay-1 px-10 md:px-0"
       >
         <div class="overflow-hidden rounded-sm">
-          <div class="relative h-[580px] md:h-[500px]">
-            <div
-              v-for="(patron, index) in patrons"
-              :key="index"
-              class="absolute inset-0 transition-all duration-500 ease-in-out"
-              :class="
-                currentSlide === index
-                  ? 'opacity-100 translate-x-0'
-                  : 'opacity-0 translate-x-full'
-              "
-            >
-              <a :href="patron.link" class="block h-full group cursor-pointer">
-                <div
-                  class="grid md:grid-cols-2 gap-4 md:gap-8 h-full bg-transparent p-0 rounded-sm transition-all"
-                >
-                  <div class="flex items-center justify-center">
-                    <img
-                      :src="patron.image"
-                      :alt="patron.name"
-                      class="w-full h-auto object-contain max-h-[220px] md:max-h-[400px] pointer-events-none mix-blend-multiply"
-                      draggable="false"
-                    />
-                  </div>
-                  <div
-                    class="flex flex-col justify-center text-center md:text-left mt-4 md:mt-0"
-                  >
-                    <h3
-                      class="text-2xl md:text-4xl font-bold mb-3 md:mb-4 text-site-dark"
+      <div class="relative h-[580px] md:h-[650px]">
+             <div
+               v-for="(patron, index) in patrons"
+               :key="index"
+               class="absolute inset-0 transition-all duration-500 ease-in-out"
+               :class="
+                 currentSlide === index
+                   ? 'opacity-100 translate-x-0'
+                   : 'opacity-0 translate-x-full'
+               "
+             >
+               <div class="block h-full">
+                 <div class="bg-gray-300 rounded-sm p-4 h-full flex flex-col relative">
+                   <!-- Título e Subtítulo -->
+                   <div class="text-center mb-4 z-10">
+                     <h3 class="text-xl font-bold mb-1 text-black">
+                       {{ patron.name }}
+                     </h3>
+                     <p class="text-gray-600 text-sm md:text-base leading-tight">
+                       {{ patron.description }}
+                     </p>
+                   </div>
+ 
+                   <!-- Imagem -->
+                   <div class="relative flex-1 flex items-center justify-center -mt-2 pb-8 px-8 md:pb-14 md:px-14">
+                     <img
+                       :src="patron.image"
+                       :alt="patron.name"
+                       class="w-full h-[320px] md:h-[420px] object-contain pointer-events-none"
+                       draggable="false"
+                     />
+                   </div>
+                    
+                  <!-- Botão SAIBA MAIS no canto inferior direito -->
+                  <div class="absolute bottom-4 right-6 md:bottom-8 md:right-10 z-20">
+                    <a 
+                      :href="patron.link" 
+                      class="group relative inline-flex items-center h-10 md:h-12 pr-10 md:pr-14 pl-4 md:pl-6 cursor-pointer"
                     >
-                      {{ patron.name }}
-                    </h3>
-                    <p
-                      class="text-site-dark/70 text-sm md:text-lg leading-relaxed mb-6"
-                    >
-                      {{ patron.description }}
-                    </p>
-                    <div
-                      class="flex items-center justify-center md:justify-start"
-                    >
-                      <div
-                        class="group relative inline-flex items-center h-12 pr-14 pl-6"
-                      >
-                        <span
-                          class="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap"
-                        >
-                          {{ $t("patrons.button") }}
-                        </span>
-                        <div
-                          class="absolute right-0 top-0 h-full w-12 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-white/0"
-                        >
-                          <div
-                            class="absolute right-0 top-0 w-12 h-full flex items-center justify-center"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke-width="1.5"
-                              stroke="currentColor"
-                              class="w-5 h-5 text-site-terracotta"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                              />
-                            </svg>
-                          </div>
+                      <span class="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-site-terracotta whitespace-nowrap z-10">
+                        {{ $t("patrons.button") }}
+                      </span>
+                      <div class="absolute right-0 top-0 h-full w-10 md:w-12 border border-site-terracotta rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:w-full bg-transparent">
+                        <div class="absolute right-0 top-0 w-10 md:w-12 h-full flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 md:w-5 md:h-5 text-site-terracotta">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                          </svg>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
