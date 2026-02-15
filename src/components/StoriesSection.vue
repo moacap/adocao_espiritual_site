@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="pt-5 pb-40 bg-white relative overflow-hidden">
+  <section class="pt-5 pb-16 md:pb-24 lg:pb-32 bg-white relative overflow-hidden">
     <div class="container relative z-10 max-w-4xl mx-auto px-6">
       <div class="text-center">
         <!-- Content -->
@@ -33,12 +33,12 @@ onMounted(() => {
           </h2>
 
           <div
-            class="reveal reveal-delay-2 text-site-dark/80 text-lg leading-relaxed mb-12 text-justify"
+            class="reveal reveal-delay-2 text-site-dark/80 text-lg leading-relaxed mb-6 text-justify"
           >
             <p v-html="$t('stories.description')"></p>
           </div>
 
-          <div class="reveal reveal-delay-3 mt-8">
+          <div class="reveal reveal-delay-3 mt-4">
             <a
               href="stories.html"
               class="group relative inline-flex items-center h-12 pr-14 pl-6"

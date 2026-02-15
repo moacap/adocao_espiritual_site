@@ -1,8 +1,7 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-  <section class="pt-5 pb-40 bg-white relative overflow-hidden">
+  <section class="pt-5 pb-12 md:pb-20 lg:pb-28 bg-white relative overflow-hidden">
     <div class="container relative z-10 max-w-4xl mx-auto px-6">
       <h2
         class="reveal reveal-delay-1 text-site-terracotta text-center text-4xl md:text-5xl leading-tight mb-8"
@@ -11,14 +10,14 @@
       </h2>
 
       <div
-        class="reveal reveal-delay-2 text-site-dark/80 text-lg leading-relaxed mb-12 text-justify"
+        class="reveal reveal-delay-2 text-site-dark/80 text-lg leading-relaxed mb-4 text-justify"
       >
         <p>
           {{ $t("intro.text") }}
         </p>
       </div>
 
-      <div class="reveal reveal-delay-3 flex justify-center mt-8">
+      <div class="reveal reveal-delay-3 flex justify-center mt-2">
         <a
           href="adocao_info.html"
           class="group relative inline-flex items-center h-12 pr-14 pl-6"
